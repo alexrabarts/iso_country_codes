@@ -1,0 +1,68 @@
+= IsoCountryCodes
+
+== DESCRIPTION:
+
+Provides ISO codes and names for countries.
+
+== FEATURES:
+
+* Search by name or code (alpha 2, alpha 3 or numeric)
+
+== PROBLEMS:
+
+* Name search requires an exact match (although it is case-insensitive)
+
+== SYNOPSIS:
+
+  # Finding an ISO code returns the country name and other code formats
+  code = IsoCountryCodes.find('au')
+  code.name    # => "Australia"
+  code.numeric # => "036"
+  code.alpha2  # => "AU"
+  code.alpha3  # => "AUS"
+
+  # Codes can be found via numeric, alpha 2 or alpha 3 format
+  IsoCountryCodes.find(36)
+  IsoCountryCodes.find('au')
+  IsoCountryCodes.find('aus')
+
+  # Codes can be found by country name
+  IsoCountryCodes.find('australia')
+
+  # Codes are comparable
+  IsoCountryCodes.find(36) == IsoCountryCodes.find('australia') # => true
+
+== INSTALL:
+
+* Via git:
+
+    git clone git://github.com/alexrabarts/iso-country-codes.git
+
+* Via gem:
+
+    gem install alexrabarts-iso-country-codes -s http://gems.github.com
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2008 Stateless Systems (http://statelesssystems.com)
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

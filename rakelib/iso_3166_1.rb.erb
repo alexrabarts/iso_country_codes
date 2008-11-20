@@ -1,0 +1,37 @@
+class IsoCountryCodes
+  class Code
+    class Numeric < Code
+    <% codes[:numeric].keys.each do |code| -%>
+      class Numeric<%= code %> < Numeric #:nodoc:
+        self.numeric = %q{<%= codes[:numeric][code][:numeric] %>}
+        self.name    = %q{<%= codes[:numeric][code][:name] %>}
+        self.alpha2  = %q{<%= codes[:numeric][code][:alpha2] %>}
+        self.alpha3  = %q{<%= codes[:numeric][code][:alpha3] %>}
+      end
+    <% end -%>
+    end # end Numeric
+
+    class Alpha2 < Code
+    <% codes[:alpha2].keys.each do |code| -%>
+      class <%= code.upcase %> < Alpha2 #:nodoc:
+        self.numeric = %q{<%= codes[:alpha2][code][:numeric] %>}
+        self.name    = %q{<%= codes[:alpha2][code][:name] %>}
+        self.alpha2  = %q{<%= codes[:alpha2][code][:alpha2] %>}
+        self.alpha3  = %q{<%= codes[:alpha2][code][:alpha3] %>}
+      end
+    <% end -%>
+    end # end Alpha2
+
+    class Alpha3 < Code
+    <% codes[:alpha3].keys.each do |code| -%>
+      class <%= code.upcase %> < Alpha3 #:nodoc:
+        self.numeric = %q{<%= codes[:alpha3][code][:numeric] %>}
+        self.name    = %q{<%= codes[:alpha3][code][:name] %>}
+        self.alpha2  = %q{<%= codes[:alpha3][code][:alpha2] %>}
+        self.alpha3  = %q{<%= codes[:alpha3][code][:alpha3] %>}
+      end
+    <% end -%>
+    end # end Alpha3
+  end # end Code
+end # IsoCountryCodes
+
