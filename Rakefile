@@ -4,7 +4,7 @@ require 'rubygems'
 require 'hoe'
 require './lib/iso_country_codes.rb'
 
-Hoe.new('IsoCountryCodes', IsoCountryCodes::VERSION) do |p|
+Hoe.new('iso_country_codes', IsoCountryCodes::VERSION) do |p|
   # p.rubyforge_name = 'IsoCountryCodesx' # if different than lowercase project name
   p.developer('Alex Rabarts', 'alexrabarts@gmail.com')
 end
