@@ -6,7 +6,7 @@ Provides ISO codes and names for countries.
 
 == FEATURES:
 
-* Search by name or code (alpha 2, alpha 3 or numeric)
+* Search by name or code (alpha-2, alpha-3 or numeric)
 
 == PROBLEMS:
 
@@ -21,16 +21,13 @@ Provides ISO codes and names for countries.
   code.alpha2  # => "AU"
   code.alpha3  # => "AUS"
 
-  # Codes can be found via numeric, alpha 2 or alpha 3 format
+  # Codes can be found via numeric, alpha-2 or alpha-3 format
   IsoCountryCodes.find(36)
   IsoCountryCodes.find('au')
   IsoCountryCodes.find('aus')
 
   # Codes can be found by country name
   IsoCountryCodes.find('australia')
-
-  # Codes are comparable
-  IsoCountryCodes.find(36) == IsoCountryCodes.find('australia') # => true
 
 == INSTALL:
 
