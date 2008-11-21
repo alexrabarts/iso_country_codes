@@ -4,14 +4,6 @@ class IsoCountryCodes
   class Code
     include Singleton
 
-    def eql?(other_code)
-      numeric == other_code.numeric
-    end
-
-    def ==(other_code)
-      eql?(other_code)
-    end
-
     def name
       self.class.name
     end
@@ -34,11 +26,7 @@ class IsoCountryCodes
       @@codes = []
       def inherited(code) #:nodoc:
         super
-        @@codes << code if %w{
-          IsoCountryCodes::Code::Numeric
-          IsoCountryCodes::Code::Alpha2
-          IsoCountryCodes::Code::Alpha3
-        }.include? self.to_s
+        @@codes << code.instance if self == IsoCountryCodes::Code
       end
 
       def all

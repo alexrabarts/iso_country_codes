@@ -16,19 +16,16 @@ class IsoCountryCodes
         }
         code_labels = td_map.keys
         doc.search('.wikitable.sortable:first tr').each do |row|
-          code_labels.each do |label|
-            codes[label] = {} if codes[label].nil?
-            value_hash = {}
-            code_labels.each do |key|
-              selector = "td:nth-of-type(#{td_map[key]})"
-              selector << ' a' if key == :name
-              value = row.search(selector).inner_text.strip
-              next if value == ''
-              value_hash[key] = value
-              if value_hash.length == code_labels.length
-                value_hash.keys.each do |value_hash_key|
-                  codes[label][value_hash[value_hash_key]] = value_hash if label == value_hash_key
-                end
+          value_hash = {}
+          code_labels.each do |key|
+            selector = "td:nth-of-type(#{td_map[key]})"
+            selector << ' a' if key == :name
+            value = row.search(selector).inner_text.strip
+            next if value == ''
+            value_hash[key] = value
+            if value_hash.length == code_labels.length
+              value_hash.keys.each do |value_hash_key|
+                codes[value_hash[value_hash_key]] = value_hash if value_hash_key == :alpha3
               end
             end
           end

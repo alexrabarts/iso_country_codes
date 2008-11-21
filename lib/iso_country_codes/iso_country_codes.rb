@@ -10,32 +10,25 @@ class IsoCountryCodes # :nodoc:
 
     def find(code)
       code     = code.to_s.upcase
-      subclass = nil
+      instance = nil
 
       if code.match(/^\d{2}$/)
         code = "0#{code}" # Make numeric codes three digits
       end
 
       if code.match(/^\d{3}$/)
-        code     = "Numeric#{code}"
-        subclass = 'Numeric'
+        instance = all.select { |c| c.numeric == code }.first
       elsif code.match(/^[A-Z]{2}$/)
-        subclass = 'Alpha2'
+        instance = all.select { |c| c.alpha2 == code }.first
       elsif code.match(/^[A-Z]{3}$/)
-        subclass = 'Alpha3'
+        instance = all.select { |c| c.alpha3 == code }.first
+      else
+        instance = all.select { |c| c.name.upcase == code }.first
       end
 
-      if !subclass.nil?
-        begin
-          klass = "#{self}::Code::#{subclass}::#{code}"
-          return eval("#{klass}.instance")
-        rescue NameError => e
-          raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist."
-        end
-      else
-        # Not a code, so search names
-        all.reject { |c| c.name.upcase != code || c.superclass.to_s != Code::Alpha3.to_s }.first.instance
-      end
+      raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
+
+      instance
     end
   end
 end
