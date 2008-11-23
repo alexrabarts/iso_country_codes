@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = %q{Provides ISO codes and names for countries.}
   s.email = ["alexrabarts@gmail.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
-  s.files = ["History.txt", "Manifest.txt", "README.txt", "Rakefile", "iso-country-codes.gemspec", "lib/iso_country_codes.rb", "lib/iso_country_codes/code.rb", "lib/iso_country_codes/iso_3166_1.rb", "lib/iso_country_codes/iso_country_codes.rb", "rakelib/cultivate.rake", "rakelib/iso_3116_1.rake", "rakelib/iso_3166_1.rb", "rakelib/iso_3166_1.rb.erb", "test/test_iso_country_codes.rb"]
+  s.files = ["History.txt", "Manifest.txt", "README.txt", "Rakefile", "iso_country_codes.gemspec", "lib/iso_country_codes.rb", "lib/iso_country_codes/code.rb", "lib/iso_country_codes/iso_3166_1.rb", "lib/iso_country_codes/iso_country_codes.rb", "rakelib/cultivate.rake", "rakelib/iso_3116_1.rake", "rakelib/iso_3166_1.rb", "rakelib/iso_3166_1.rb.erb", "test/test_iso_country_codes.rb"]
   s.has_rdoc = true
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]

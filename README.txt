@@ -1,4 +1,4 @@
-= IsoCountryCodes
+= iso_country_codes
 
 == DESCRIPTION:
 
@@ -33,11 +33,11 @@ Provides ISO codes and names for countries.
 
 * Via git:
 
-    git clone git://github.com/alexrabarts/iso-country-codes.git
+    git clone git://github.com/alexrabarts/iso_country_codes.git
 
 * Via gem:
 
-    gem install alexrabarts-iso-country-codes -s http://gems.github.com
+    gem install alexrabarts-iso_country_codes -s http://gems.github.com
 
 == LICENSE:
 
