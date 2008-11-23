@@ -4,15 +4,15 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alex Rabarts"]
-  s.date = %q{2008-11-21}
+  s.date = %q{2008-11-24}
   s.description = %q{Provides ISO codes and names for countries.}
   s.email = ["alexrabarts@gmail.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
-  s.files = ["History.txt", "Manifest.txt", "README.txt", "Rakefile", "lib/iso_country_codes.rb", "test/test_iso_country_codes.rb"]
+  s.files = ["History.txt", "Manifest.txt", "README.txt", "Rakefile", "iso-country-codes.gemspec", "lib/iso_country_codes.rb", "lib/iso_country_codes/code.rb", "lib/iso_country_codes/iso_3166_1.rb", "lib/iso_country_codes/iso_country_codes.rb", "rakelib/cultivate.rake", "rakelib/iso_3116_1.rake", "rakelib/iso_3166_1.rb", "rakelib/iso_3166_1.rb.erb", "test/test_iso_country_codes.rb"]
   s.has_rdoc = true
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{isocountrycodes}
+  s.rubyforge_project = %q{iso_country_codes}
   s.rubygems_version = %q{1.2.0}
   s.summary = %q{Provides ISO codes and names for countries.}
   s.test_files = ["test/test_iso_country_codes.rb"]
