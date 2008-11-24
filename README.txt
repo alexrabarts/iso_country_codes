@@ -28,6 +28,9 @@ Provides ISO codes and names for countries.
   # Inexact matches can also be found
   IsoCountryCodes.find('united', :fuzzy => true).name # => 'United Kingdom'
 
+  # Fetch a country's local currency
+  IsoCountryCodes.find('aus').currency # => "AUD"
+
 == INSTALL:
 
 * Via git:

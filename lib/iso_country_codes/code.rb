@@ -20,8 +20,21 @@ class IsoCountryCodes
       self.class.alpha3
     end
 
+    def main_currency
+      self.class.main_currency
+    end
+
+    def currency
+      self.class.currency
+    end
+
+    def currencies
+      self.class.currencies
+    end
+
     class << self
-      attr_accessor :name, :numeric, :alpha2, :alpha3
+      attr_accessor :name, :numeric, :alpha2, :alpha3, :main_currency, :currencies
+      alias_method :currency, :main_currency
 
       @@codes = []
       def inherited(code) #:nodoc:
@@ -31,6 +44,10 @@ class IsoCountryCodes
 
       def all
         @@codes.uniq
+      end
+
+      def currencies
+        @currencies || [@main_currency]
       end
     end
   end

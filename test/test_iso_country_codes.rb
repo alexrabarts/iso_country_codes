@@ -49,6 +49,20 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     end
   end
 
+  def test_get_main_currency
+    assert_equal 'AUD', IsoCountryCodes.find('AUS').main_currency
+  end
+
+  def test_currency_alias_method
+    code = IsoCountryCodes.find('AUS')
+    assert_equal code.main_currency, code.currency
+  end
+
+  def test_get_multiple_currencies
+    assert_equal IsoCountryCodes.find('ATA').currencies, %w{AUD GBP}
+    assert_equal IsoCountryCodes.find('AUS').currencies, %w{AUD}
+  end
+
   def test_get_numeric
      assert_equal '036', IsoCountryCodes::Code::AUS.numeric
      assert_equal '036', IsoCountryCodes::Code::AUS.instance.numeric
