@@ -2,7 +2,7 @@
 
 == DESCRIPTION:
 
-Provides ISO codes and names for countries.
+Provides ISO codes, names and currencies for countries.
 
 == FEATURES:
 

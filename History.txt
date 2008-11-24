@@ -1,3 +1,7 @@
+=== 0.2.0 / 2008-11-24
+
+* Currency codes added
+
 === 0.1.2 / 2008-11-24
 
 * Inexact strings can now be used to search for country names
