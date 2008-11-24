@@ -1,5 +1,5 @@
 class IsoCountryCodes # :nodoc:
-  VERSION = '0.2.0'
+  VERSION = '0.2.1'
 
   class UnknownCodeError < StandardError; end
 
