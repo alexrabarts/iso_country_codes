@@ -8,10 +8,6 @@ Provides ISO codes and names for countries.
 
 * Search by name or code (alpha-2, alpha-3 or numeric)
 
-== PROBLEMS:
-
-* Name search requires an exact match (although it is case-insensitive)
-
 == SYNOPSIS:
 
   # Finding an ISO code returns the country name and other code formats
@@ -28,6 +24,9 @@ Provides ISO codes and names for countries.
 
   # Codes can be found by country name
   IsoCountryCodes.find('australia')
+
+  # Inexact matches can also be found
+  IsoCountryCodes.find('united', :fuzzy => true).name # => 'United Kingdom'
 
 == INSTALL:
 

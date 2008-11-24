@@ -42,6 +42,13 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('Australia')
   end
 
+  def test_fuzzy_find
+    assert_equal IsoCountryCodes::Code::GBR.instance, IsoCountryCodes.find('united', :fuzzy => true)
+    assert_raises IsoCountryCodes::UnknownCodeError do
+      IsoCountryCodes.find('united')
+    end
+  end
+
   def test_get_numeric
      assert_equal '036', IsoCountryCodes::Code::AUS.numeric
      assert_equal '036', IsoCountryCodes::Code::AUS.instance.numeric
