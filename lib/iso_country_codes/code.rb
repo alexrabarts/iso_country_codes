@@ -33,7 +33,8 @@ class IsoCountryCodes
     end
 
     class << self
-      attr_accessor :name, :numeric, :alpha2, :alpha3, :main_currency, :currencies
+      attr_accessor :name, :numeric, :alpha2, :alpha3, :main_currency
+      attr_writer :currencies
       alias_method :currency, :main_currency
 
       @@codes = []
@@ -47,7 +48,11 @@ class IsoCountryCodes
       end
 
       def currencies
-        @currencies || [@main_currency]
+        if defined? @currencies
+          return @currencies
+        else
+          return [@main_currency]
+        end
       end
     end
   end
