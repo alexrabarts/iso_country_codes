@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class IsoCountryCodes
   class Code
     class GBR < Code #:nodoc:
@@ -74,7 +76,7 @@ class IsoCountryCodes
     end
     class BOL < Code #:nodoc:
       self.numeric = %q{068}
-      self.name    = %q{Bolivia}
+      self.name    = %q{Bolivia, Plurinational State of}
       self.alpha2  = %q{BO}
       self.alpha3  = %q{BOL}
     end
@@ -464,7 +466,7 @@ class IsoCountryCodes
     end
     class COD < Code #:nodoc:
       self.numeric = %q{180}
-      self.name    = %q{Congo, Democratic Republic of the}
+      self.name    = %q{Congo, the Democratic Republic of the}
       self.alpha2  = %q{CD}
       self.alpha3  = %q{COD}
     end
@@ -476,7 +478,7 @@ class IsoCountryCodes
     end
     class MDA < Code #:nodoc:
       self.numeric = %q{498}
-      self.name    = %q{Moldova}
+      self.name    = %q{Moldova, Republic of}
       self.alpha2  = %q{MD}
       self.alpha3  = %q{MDA}
     end
@@ -644,7 +646,7 @@ class IsoCountryCodes
     end
     class VEN < Code #:nodoc:
       self.numeric = %q{862}
-      self.name    = %q{Venezuela}
+      self.name    = %q{Venezuela, Bolivarian Republic of}
       self.alpha2  = %q{VE}
       self.alpha3  = %q{VEN}
     end
