@@ -1,3 +1,8 @@
+=== 0.2.2 / 2009-08-07
+
+* Added Ruby 1.9 UTF-8 encoding header
+* Updated with the latest country names from Wikipedia
+
 === 0.2.1 / 2008-11-25
 
 * All Ruby warnings resolved
