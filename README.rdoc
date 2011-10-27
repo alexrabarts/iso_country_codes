@@ -33,13 +33,7 @@ Provides ISO codes, names and currencies for countries.
 
 == INSTALL:
 
-* Via git:
-
-    git clone git://github.com/alexrabarts/iso_country_codes.git
-
-* Via gem:
-
-    gem install alexrabarts-iso_country_codes -s http://gems.github.com
+  gem install iso_country_codes
 
 == LICENSE:
 
