@@ -740,5 +740,11 @@ class IsoCountryCodes
     class GNB < Code #:nodoc:
       self.main_currency = 'XOF'
     end
+    class BES < Code #:nodoc:
+      self.main_currency = 'USD'
+    end
+    class CUW < Code #:nodoc:
+      self.main_currency = 'ANG'
+    end
   end # end Code
 end # IsoCountryCodes

@@ -1478,6 +1478,18 @@ class IsoCountryCodes
       self.alpha2  = %q{GW}
       self.alpha3  = %q{GNB}
     end
+    class BES < Code #:nodoc:
+      self.numeric = %q{535}
+      self.name    = %q{Bonaire, Sint Eustatius and Saba}
+      self.alpha2  = %q{BQ}
+      self.alpha3  = %q{BES}
+    end
+    class CUW < Code #:nodoc:
+      self.numeric = %q{531}
+      self.name    = %q{Curaçao}
+      self.alpha2  = %q{CW}
+      self.alpha3  = %q{CUW}
+    end
   end # end Code
 end # IsoCountryCodes
 
