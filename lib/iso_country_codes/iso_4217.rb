@@ -108,8 +108,17 @@ class IsoCountryCodes
     class MKD < Code #:nodoc:
       self.main_currency = 'MKD'
     end
-    class ANT < Code #:nodoc:
+    class CUW < Code #:nodoc:
       self.main_currency = 'ANG'
+    end
+    class SXM < Code #:nodoc:
+      self.main_currency = 'ANG'
+    end
+    class SSD < Code #:nodoc:
+      self.main_currency = 'SSP'
+    end
+    class BES < Code #:nodoc:
+      self.main_currency = 'USD'
     end
     class AZE < Code #:nodoc:
       self.main_currency = 'AZN'

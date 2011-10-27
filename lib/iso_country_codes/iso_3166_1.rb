@@ -92,17 +92,17 @@ class IsoCountryCodes
       self.alpha2  = %q{DE}
       self.alpha3  = %q{DEU}
     end
-    class MLT < Code #:nodoc:
-      self.numeric = %q{470}
-      self.name    = %q{Malta}
-      self.alpha2  = %q{MT}
-      self.alpha3  = %q{MLT}
-    end
     class TGO < Code #:nodoc:
       self.numeric = %q{768}
       self.name    = %q{Togo}
       self.alpha2  = %q{TG}
       self.alpha3  = %q{TGO}
+    end
+    class MLT < Code #:nodoc:
+      self.numeric = %q{470}
+      self.name    = %q{Malta}
+      self.alpha2  = %q{MT}
+      self.alpha3  = %q{MLT}
     end
     class SRB < Code #:nodoc:
       self.numeric = %q{688}
@@ -217,12 +217,6 @@ class IsoCountryCodes
       self.name    = %q{Macedonia, the former Yugoslav Republic of}
       self.alpha2  = %q{MK}
       self.alpha3  = %q{MKD}
-    end
-    class ANT < Code #:nodoc:
-      self.numeric = %q{530}
-      self.name    = %q{Netherlands Antilles}
-      self.alpha2  = %q{AN}
-      self.alpha3  = %q{ANT}
     end
     class AZE < Code #:nodoc:
       self.numeric = %q{031}
@@ -500,6 +494,12 @@ class IsoCountryCodes
       self.alpha2  = %q{MF}
       self.alpha3  = %q{MAF}
     end
+    class BES < Code #:nodoc:
+      self.numeric = %q{535}
+      self.name    = %q{Bonaire, Sint Eustatius and Saba}
+      self.alpha2  = %q{BQ}
+      self.alpha3  = %q{BES}
+    end
     class GTM < Code #:nodoc:
       self.numeric = %q{320}
       self.name    = %q{Guatemala}
@@ -559,6 +559,12 @@ class IsoCountryCodes
       self.name    = %q{Mexico}
       self.alpha2  = %q{MX}
       self.alpha3  = %q{MEX}
+    end
+    class SXM < Code #:nodoc:
+      self.numeric = %q{534}
+      self.name    = %q{Sint Maarten (Dutch part)}
+      self.alpha2  = %q{SX}
+      self.alpha3  = %q{SXM}
     end
     class WSM < Code #:nodoc:
       self.numeric = %q{882}
@@ -622,7 +628,7 @@ class IsoCountryCodes
     end
     class SHN < Code #:nodoc:
       self.numeric = %q{654}
-      self.name    = %q{Saint Helena}
+      self.name    = %q{Saint Helena, Ascension and Tristan da Cunha}
       self.alpha2  = %q{SH}
       self.alpha3  = %q{SHN}
     end
@@ -872,6 +878,12 @@ class IsoCountryCodes
       self.alpha2  = %q{BT}
       self.alpha3  = %q{BTN}
     end
+    class TON < Code #:nodoc:
+      self.numeric = %q{776}
+      self.name    = %q{Tonga}
+      self.alpha2  = %q{TO}
+      self.alpha3  = %q{TON}
+    end
     class THA < Code #:nodoc:
       self.numeric = %q{764}
       self.name    = %q{Thailand}
@@ -883,12 +895,6 @@ class IsoCountryCodes
       self.name    = %q{Sweden}
       self.alpha2  = %q{SE}
       self.alpha3  = %q{SWE}
-    end
-    class TON < Code #:nodoc:
-      self.numeric = %q{776}
-      self.name    = %q{Tonga}
-      self.alpha2  = %q{TO}
-      self.alpha3  = %q{TON}
     end
     class VNM < Code #:nodoc:
       self.numeric = %q{704}
@@ -957,7 +963,7 @@ class IsoCountryCodes
       self.alpha3  = %q{CHL}
     end
     class SDN < Code #:nodoc:
-      self.numeric = %q{736}
+      self.numeric = %q{729}
       self.name    = %q{Sudan}
       self.alpha2  = %q{SD}
       self.alpha3  = %q{SDN}
@@ -1051,6 +1057,12 @@ class IsoCountryCodes
       self.name    = %q{Iraq}
       self.alpha2  = %q{IQ}
       self.alpha3  = %q{IRQ}
+    end
+    class CUW < Code #:nodoc:
+      self.numeric = %q{531}
+      self.name    = %q{Curaçao}
+      self.alpha2  = %q{CW}
+      self.alpha3  = %q{CUW}
     end
     class BFA < Code #:nodoc:
       self.numeric = %q{854}
@@ -1165,6 +1177,12 @@ class IsoCountryCodes
       self.name    = %q{Turkmenistan}
       self.alpha2  = %q{TM}
       self.alpha3  = %q{TKM}
+    end
+    class SSD < Code #:nodoc:
+      self.numeric = %q{728}
+      self.name    = %q{South Sudan}
+      self.alpha2  = %q{SS}
+      self.alpha3  = %q{SSD}
     end
     class GRD < Code #:nodoc:
       self.numeric = %q{308}
