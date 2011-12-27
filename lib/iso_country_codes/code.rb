@@ -47,6 +47,10 @@ class IsoCountryCodes
         @@codes.uniq
       end
 
+      def for_select(type = :alpha2)
+        all.map { |country| [country.name, country.send(type)] }
+      end
+
       def currencies
         if defined? @currencies
           return @currencies

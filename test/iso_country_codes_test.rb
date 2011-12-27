@@ -77,10 +77,19 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal 'AUS', IsoCountryCodes::Code::AUS.alpha3
     assert_equal 'AUS', IsoCountryCodes::Code::AUS.instance.alpha3
   end
-  
+
   def test_get_name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.instance.name
+  end
+
+  def test_for_select
+    assert       IsoCountryCodes::Code.for_select.is_a?(Array)
+    assert_equal IsoCountryCodes::Code.for_select.length, IsoCountryCodes::Code.all.length
+  end
+
+  def test_for_select_value_attribute
+    assert_equal IsoCountryCodes::Code.for_select(:alpha3)[0][1].length, 3
   end
 
   def test_unknown_iso_code
