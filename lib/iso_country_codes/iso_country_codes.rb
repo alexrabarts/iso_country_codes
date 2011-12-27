@@ -2,6 +2,11 @@ class IsoCountryCodes # :nodoc:
   class UnknownCodeError < StandardError; end
 
   class << self
+
+    def for_select(*args)
+      Code.for_select(*args)
+    end
+
     def all
       Code.all
     end
