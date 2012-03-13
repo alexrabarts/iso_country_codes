@@ -1360,7 +1360,7 @@ class IsoCountryCodes
     end
     class LBY < Code #:nodoc:
       self.numeric = %q{434}
-      self.name    = %q{Libyan Arab Jamahiriya}
+      self.name    = %q{Libya}
       self.alpha2  = %q{LY}
       self.alpha3  = %q{LBY}
     end
