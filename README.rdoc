@@ -31,6 +31,9 @@ Provides ISO codes, names and currencies for countries.
   # Fetch a country's local currency
   IsoCountryCodes.find('aus').currency # => "AUD"
 
+  # Output an Array of countries and their codes for use form helper methods
+  IsoCountryCodes.for_select # => Array
+
 == INSTALL:
 
   gem install iso_country_codes
