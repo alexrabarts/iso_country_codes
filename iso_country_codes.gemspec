@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{iso_country_codes}
-  s.version = "0.2.3"
+  s.name = "iso_country_codes"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["alex"]
-  s.date = %q{2011-10-27}
-  s.description = %q{ISO country code and currency library}
-  s.email = %q{alexrabarts@gmail.com}
+  s.date = "2012-03-13"
+  s.description = "ISO country code and currency library"
+  s.email = "alexrabarts@gmail.com"
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION.yml",
+    "iso_country_codes.gemspec",
     "lib/iso_country_codes.rb",
     "lib/iso_country_codes/code.rb",
     "lib/iso_country_codes/iso_3166_1.rb",
@@ -34,10 +35,10 @@ Gem::Specification.new do |s|
     "rakelib/iso_3166_1.rb.erb",
     "test/iso_country_codes_test.rb"
   ]
-  s.homepage = %q{http://github.com/alexrabarts/iso_country_codes}
+  s.homepage = "http://github.com/alexrabarts/iso_country_codes"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
-  s.summary = %q{Provides ISO 3166-1 country codes/names and ISO 4217 currencies.}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Provides ISO 3166-1 country codes/names and ISO 4217 currencies."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -46,15 +47,18 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<rake>, [">= 0"])
       s.add_runtime_dependency(%q<rdoc>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_development_dependency(%q<nokogiri>, [">= 0"])
     else
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<nokogiri>, [">= 0"])
     end
   else
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<nokogiri>, [">= 0"])
   end
 end
 
