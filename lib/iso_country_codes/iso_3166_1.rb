@@ -4,366 +4,427 @@ class IsoCountryCodes
   class Code
     class GBR < Code #:nodoc:
       self.numeric = %q{826}
+      self.c_code = %q{44}
       self.name    = %q{United Kingdom}
       self.alpha2  = %q{GB}
       self.alpha3  = %q{GBR}
     end
     class FJI < Code #:nodoc:
       self.numeric = %q{242}
+      #self.c_code      = %q{679}      
       self.name    = %q{Fiji}
       self.alpha2  = %q{FJ}
       self.alpha3  = %q{FJI}
     end
     class BLM < Code #:nodoc:
       self.numeric = %q{652}
+      #self.c_code      = %q{590}
       self.name    = %q{Saint Barthélemy}
       self.alpha2  = %q{BL}
       self.alpha3  = %q{BLM}
     end
     class RUS < Code #:nodoc:
       self.numeric = %q{643}
+      #self.c_code      = %q{7}
       self.name    = %q{Russian Federation}
       self.alpha2  = %q{RU}
       self.alpha3  = %q{RUS}
     end
     class JOR < Code #:nodoc:
       self.numeric = %q{400}
+      #self.c_code      = %q{962}
       self.name    = %q{Jordan}
       self.alpha2  = %q{JO}
       self.alpha3  = %q{JOR}
     end
     class GEO < Code #:nodoc:
       self.numeric = %q{268}
+      #self.c_code      = %q{995}
       self.name    = %q{Georgia}
       self.alpha2  = %q{GE}
       self.alpha3  = %q{GEO}
     end
     class ATF < Code #:nodoc:
       self.numeric = %q{260}
+      #self.c_code      = %q{689}
       self.name    = %q{French Southern Territories}
       self.alpha2  = %q{TF}
       self.alpha3  = %q{ATF}
     end
     class ECU < Code #:nodoc:
       self.numeric = %q{218}
+      #self.c_code      = %q{593}
       self.name    = %q{Ecuador}
       self.alpha2  = %q{EC}
       self.alpha3  = %q{ECU}
     end
     class TWN < Code #:nodoc:
       self.numeric = %q{158}
+      #self.c_code      = %q{886}      
       self.name    = %q{Taiwan, Province of China}
       self.alpha2  = %q{TW}
       self.alpha3  = %q{TWN}
     end
     class ZWE < Code #:nodoc:
       self.numeric = %q{716}
+      #self.c_code      = %q{263}
       self.name    = %q{Zimbabwe}
       self.alpha2  = %q{ZW}
       self.alpha3  = %q{ZWE}
     end
     class ATG < Code #:nodoc:
       self.numeric = %q{028}
+      #self.c_code      = %q{268}
       self.name    = %q{Antigua and Barbuda}
       self.alpha2  = %q{AG}
       self.alpha3  = %q{ATG}
     end
     class IDN < Code #:nodoc:
       self.numeric = %q{360}
+      #self.c_code      = %q{62}
       self.name    = %q{Indonesia}
       self.alpha2  = %q{ID}
       self.alpha3  = %q{IDN}
     end
     class BOL < Code #:nodoc:
       self.numeric = %q{068}
+      #self.c_code      = %q{591}
       self.name    = %q{Bolivia, Plurinational State of}
       self.alpha2  = %q{BO}
       self.alpha3  = %q{BOL}
     end
     class NPL < Code #:nodoc:
       self.numeric = %q{524}
+      #self.c_code      = %q{977}
       self.name    = %q{Nepal}
       self.alpha2  = %q{NP}
       self.alpha3  = %q{NPL}
     end
     class DEU < Code #:nodoc:
       self.numeric = %q{276}
+      #self.c_code      = %q{49}
       self.name    = %q{Germany}
       self.alpha2  = %q{DE}
       self.alpha3  = %q{DEU}
     end
     class TGO < Code #:nodoc:
       self.numeric = %q{768}
+      #self.c_code      = %q{228}
       self.name    = %q{Togo}
       self.alpha2  = %q{TG}
       self.alpha3  = %q{TGO}
     end
     class MLT < Code #:nodoc:
       self.numeric = %q{470}
+      #self.c_code      = %q{356}
       self.name    = %q{Malta}
       self.alpha2  = %q{MT}
       self.alpha3  = %q{MLT}
     end
     class SRB < Code #:nodoc:
       self.numeric = %q{688}
+      #self.c_code      = %q{381}
       self.name    = %q{Serbia}
       self.alpha2  = %q{RS}
       self.alpha3  = %q{SRB}
     end
     class TJK < Code #:nodoc:
       self.numeric = %q{762}
+      #self.c_code      = %q{992}
       self.name    = %q{Tajikistan}
       self.alpha2  = %q{TJ}
       self.alpha3  = %q{TJK}
     end
     class REU < Code #:nodoc:
       self.numeric = %q{638}
+      #self.c_code      = %q{262}
       self.name    = %q{Réunion}
       self.alpha2  = %q{RE}
       self.alpha3  = %q{REU}
     end
     class DNK < Code #:nodoc:
       self.numeric = %q{208}
+      #self.c_code      = %q{45}
       self.name    = %q{Denmark}
       self.alpha2  = %q{DK}
       self.alpha3  = %q{DNK}
     end
     class LAO < Code #:nodoc:
       self.numeric = %q{418}
+      #self.c_code      = %q{856}
       self.name    = %q{Lao People's Democratic Republic}
       self.alpha2  = %q{LA}
       self.alpha3  = %q{LAO}
     end
     class POL < Code #:nodoc:
       self.numeric = %q{616}
+      #self.c_code      = %q{48}
       self.name    = %q{Poland}
       self.alpha2  = %q{PL}
       self.alpha3  = %q{POL}
     end
     class BLR < Code #:nodoc:
       self.numeric = %q{112}
+      #self.c_code      = %q{375}
       self.name    = %q{Belarus}
       self.alpha2  = %q{BY}
       self.alpha3  = %q{BLR}
     end
     class PRI < Code #:nodoc:
       self.numeric = %q{630}
+      #self.c_code      = %q{1787}
       self.name    = %q{Puerto Rico}
       self.alpha2  = %q{PR}
       self.alpha3  = %q{PRI}
     end
     class GAB < Code #:nodoc:
       self.numeric = %q{266}
+      #self.c_code      = %q{241}
       self.name    = %q{Gabon}
       self.alpha2  = %q{GA}
       self.alpha3  = %q{GAB}
     end
     class TCA < Code #:nodoc:
       self.numeric = %q{796}
+      #self.c_code      = %q{649}
       self.name    = %q{Turks and Caicos Islands}
       self.alpha2  = %q{TC}
       self.alpha3  = %q{TCA}
     end
     class NIC < Code #:nodoc:
       self.numeric = %q{558}
+      #self.c_code      = %q{505}
       self.name    = %q{Nicaragua}
       self.alpha2  = %q{NI}
       self.alpha3  = %q{NIC}
     end
     class RWA < Code #:nodoc:
       self.numeric = %q{646}
+      #self.c_code      = %q{250}
       self.name    = %q{Rwanda}
       self.alpha2  = %q{RW}
       self.alpha3  = %q{RWA}
     end
     class SYR < Code #:nodoc:
       self.numeric = %q{760}
+      #self.c_code      = %q{963}
       self.name    = %q{Syrian Arab Republic}
       self.alpha2  = %q{SY}
       self.alpha3  = %q{SYR}
     end
     class URY < Code #:nodoc:
       self.numeric = %q{858}
+      #self.c_code      = %q{598}
       self.name    = %q{Uruguay}
       self.alpha2  = %q{UY}
       self.alpha3  = %q{URY}
     end
     class NCL < Code #:nodoc:
       self.numeric = %q{540}
+      #self.c_code      = %q{687}
       self.name    = %q{New Caledonia}
       self.alpha2  = %q{NC}
       self.alpha3  = %q{NCL}
     end
     class VCT < Code #:nodoc:
       self.numeric = %q{670}
+      #self.c_code      = %q{784}
       self.name    = %q{Saint Vincent and the Grenadines}
       self.alpha2  = %q{VC}
       self.alpha3  = %q{VCT}
     end
     class PRK < Code #:nodoc:
       self.numeric = %q{408}
+      #self.c_code      = %q{850}
       self.name    = %q{Korea, Democratic People's Republic of}
       self.alpha2  = %q{KP}
       self.alpha3  = %q{PRK}
     end
     class ZMB < Code #:nodoc:
       self.numeric = %q{894}
+      #self.c_code      = %q{260}
       self.name    = %q{Zambia}
       self.alpha2  = %q{ZM}
       self.alpha3  = %q{ZMB}
     end
     class MKD < Code #:nodoc:
       self.numeric = %q{807}
+      #self.c_code      = %q{389}
       self.name    = %q{Macedonia, the former Yugoslav Republic of}
       self.alpha2  = %q{MK}
       self.alpha3  = %q{MKD}
     end
     class AZE < Code #:nodoc:
       self.numeric = %q{031}
+      #self.c_code      = %q{994}
       self.name    = %q{Azerbaijan}
       self.alpha2  = %q{AZ}
       self.alpha3  = %q{AZE}
     end
     class BRN < Code #:nodoc:
       self.numeric = %q{096}
+      #self.c_code      = %q{673}
       self.name    = %q{Brunei Darussalam}
       self.alpha2  = %q{BN}
       self.alpha3  = %q{BRN}
     end
     class CMR < Code #:nodoc:
       self.numeric = %q{120}
+      #self.c_code      = %q{237}
       self.name    = %q{Cameroon}
       self.alpha2  = %q{CM}
       self.alpha3  = %q{CMR}
     end
     class ERI < Code #:nodoc:
       self.numeric = %q{232}
+      #self.c_code      = %q{291}
       self.name    = %q{Eritrea}
       self.alpha2  = %q{ER}
       self.alpha3  = %q{ERI}
     end
     class TCD < Code #:nodoc:
       self.numeric = %q{148}
+      #self.c_code      = %q{235}
       self.name    = %q{Chad}
       self.alpha2  = %q{TD}
       self.alpha3  = %q{TCD}
     end
     class DZA < Code #:nodoc:
       self.numeric = %q{012}
+      #self.c_code      = %q{213}
       self.name    = %q{Algeria}
       self.alpha2  = %q{DZ}
       self.alpha3  = %q{DZA}
     end
     class CCK < Code #:nodoc:
       self.numeric = %q{166}
+      #self.c_code      = %q{891}
       self.name    = %q{Cocos (Keeling) Islands}
       self.alpha2  = %q{CC}
       self.alpha3  = %q{CCK}
     end
     class NFK < Code #:nodoc:
       self.numeric = %q{574}
+      #self.c_code      = %q{672}
       self.name    = %q{Norfolk Island}
       self.alpha2  = %q{NF}
       self.alpha3  = %q{NFK}
     end
     class SOM < Code #:nodoc:
       self.numeric = %q{706}
+      #self.c_code      = %q{252}
       self.name    = %q{Somalia}
       self.alpha2  = %q{SO}
       self.alpha3  = %q{SOM}
     end
     class GUY < Code #:nodoc:
       self.numeric = %q{328}
+      #self.c_code      = %q{592}
       self.name    = %q{Guyana}
       self.alpha2  = %q{GY}
       self.alpha3  = %q{GUY}
     end
     class MRT < Code #:nodoc:
       self.numeric = %q{478}
+      #self.c_code      = %q{222}
       self.name    = %q{Mauritania}
       self.alpha2  = %q{MR}
       self.alpha3  = %q{MRT}
     end
     class NLD < Code #:nodoc:
       self.numeric = %q{528}
+      #self.c_code      = %q{31}
       self.name    = %q{Netherlands}
       self.alpha2  = %q{NL}
       self.alpha3  = %q{NLD}
     end
     class PLW < Code #:nodoc:
       self.numeric = %q{585}
+      #self.c_code      = %q{680}
       self.name    = %q{Palau}
       self.alpha2  = %q{PW}
       self.alpha3  = %q{PLW}
     end
     class VIR < Code #:nodoc:
       self.numeric = %q{850}
+      #self.c_code      = %q{340}
       self.name    = %q{Virgin Islands, U.S.}
       self.alpha2  = %q{VI}
       self.alpha3  = %q{VIR}
     end
     class BEL < Code #:nodoc:
       self.numeric = %q{056}
+      #self.c_code      = %q{32}
       self.name    = %q{Belgium}
       self.alpha2  = %q{BE}
       self.alpha3  = %q{BEL}
     end
     class MHL < Code #:nodoc:
       self.numeric = %q{584}
+      #self.c_code      = %q{692}
       self.name    = %q{Marshall Islands}
       self.alpha2  = %q{MH}
       self.alpha3  = %q{MHL}
     end
     class UKR < Code #:nodoc:
       self.numeric = %q{804}
+      #self.c_code      = %q{380}
       self.name    = %q{Ukraine}
       self.alpha2  = %q{UA}
       self.alpha3  = %q{UKR}
     end
     class UGA < Code #:nodoc:
       self.numeric = %q{800}
+      #self.c_code      = %q{256}
       self.name    = %q{Uganda}
       self.alpha2  = %q{UG}
       self.alpha3  = %q{UGA}
     end
     class LTU < Code #:nodoc:
       self.numeric = %q{440}
+      #self.c_code      = %q{370}
       self.name    = %q{Lithuania}
       self.alpha2  = %q{LT}
       self.alpha3  = %q{LTU}
     end
     class MNE < Code #:nodoc:
       self.numeric = %q{499}
+      #self.c_code      = %q{382}
       self.name    = %q{Montenegro}
       self.alpha2  = %q{ME}
       self.alpha3  = %q{MNE}
     end
     class BLZ < Code #:nodoc:
       self.numeric = %q{084}
+      #self.c_code      = %q{501}
       self.name    = %q{Belize}
       self.alpha2  = %q{BZ}
       self.alpha3  = %q{BLZ}
     end
     class MOZ < Code #:nodoc:
       self.numeric = %q{508}
+      ##self.c_code      = %q{258}
       self.name    = %q{Mozambique}
       self.alpha2  = %q{MZ}
       self.alpha3  = %q{MOZ}
     end
     class MUS < Code #:nodoc:
       self.numeric = %q{480}
+      ##self.c_code      = %q{230}
       self.name    = %q{Mauritius}
       self.alpha2  = %q{MU}
       self.alpha3  = %q{MUS}
     end
     class IMN < Code #:nodoc:
       self.numeric = %q{833}
+      ##self.c_code      = %q{44}
       self.name    = %q{Isle of Man}
       self.alpha2  = %q{IM}
       self.alpha3  = %q{IMN}
     end
     class DMA < Code #:nodoc:
       self.numeric = %q{212}
+      ##self.c_code      = %q{767}
       self.name    = %q{Dominica}
       self.alpha2  = %q{DM}
       self.alpha3  = %q{DMA}
