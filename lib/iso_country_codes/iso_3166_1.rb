@@ -4,49 +4,49 @@ class IsoCountryCodes
   class Code
     class GBR < Code #:nodoc:
       self.numeric = %q{826}
-      self.c_code = %q{44}
+      self.c_code = %q{044}
       self.name    = %q{United Kingdom}
       self.alpha2  = %q{GB}
       self.alpha3  = %q{GBR}
     end
     class FJI < Code #:nodoc:
       self.numeric = %q{242}
-      #self.c_code      = %q{679}      
+      self.c_code  = %q{679}      
       self.name    = %q{Fiji}
       self.alpha2  = %q{FJ}
       self.alpha3  = %q{FJI}
     end
     class BLM < Code #:nodoc:
       self.numeric = %q{652}
-      #self.c_code      = %q{590}
+      self.c_code  = %q{590}
       self.name    = %q{Saint Barthélemy}
       self.alpha2  = %q{BL}
       self.alpha3  = %q{BLM}
     end
     class RUS < Code #:nodoc:
       self.numeric = %q{643}
-      #self.c_code      = %q{7}
+      self.c_code  = %q{7}
       self.name    = %q{Russian Federation}
       self.alpha2  = %q{RU}
       self.alpha3  = %q{RUS}
     end
     class JOR < Code #:nodoc:
       self.numeric = %q{400}
-      #self.c_code      = %q{962}
+      self.c_code  = %q{962}
       self.name    = %q{Jordan}
       self.alpha2  = %q{JO}
       self.alpha3  = %q{JOR}
     end
     class GEO < Code #:nodoc:
       self.numeric = %q{268}
-      #self.c_code      = %q{995}
+      self.c_code  = %q{995}
       self.name    = %q{Georgia}
       self.alpha2  = %q{GE}
       self.alpha3  = %q{GEO}
     end
     class ATF < Code #:nodoc:
       self.numeric = %q{260}
-      #self.c_code      = %q{689}
+      self.c_code  = %q{689}
       self.name    = %q{French Southern Territories}
       self.alpha2  = %q{TF}
       self.alpha3  = %q{ATF}

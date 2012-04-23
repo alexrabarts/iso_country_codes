@@ -20,6 +20,10 @@ class IsoCountryCodes
       self.class.alpha3
     end
 
+    def c_code
+      self.class.c_code
+    end
+
     def main_currency
       self.class.main_currency
     end
@@ -33,7 +37,7 @@ class IsoCountryCodes
     end
 
     class << self
-      attr_accessor :name, :numeric, :alpha2, :alpha3, :main_currency
+      attr_accessor :name, :c_code, :numeric, :alpha2, :alpha3, :main_currency
       attr_writer :currencies
       alias_method :currency, :main_currency
 

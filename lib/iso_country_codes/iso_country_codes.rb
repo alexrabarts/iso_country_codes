@@ -20,11 +20,13 @@ class IsoCountryCodes # :nodoc:
       end
 
       if code.match(/^\d{3}$/)
-        instance = all.select { |c| c.numeric == code }.first
+        instance = all.select { |c| c.c_code == code }.first
       elsif code.match(/^[A-Z]{2}$/)
         instance = all.select { |c| c.alpha2 == code }.first
       elsif code.match(/^[A-Z]{3}$/)
         instance = all.select { |c| c.alpha3 == code }.first
+      elsif code.match(/^[A-Z]{3}$/)
+        instance = all.select { |c| c.numeric == code }.first
       else
         instance = all.select { |c| c.name.upcase == code }.first
         if opts[:fuzzy]
