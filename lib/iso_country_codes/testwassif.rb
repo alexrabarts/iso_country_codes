@@ -4,15 +4,10 @@ require 'rubygems'
 require '/Users/awassif1/o2_projects/iso_country_codes/lib/iso_country_codes'
 
 
-
-code = IsoCountryCodes.find("590")
-
-
-
- country_code_prefix = code.c_code
-#country_code_prefix= country_code_prefix.gsub("+", 'replaced')   
-# puts country_code_prefix
- puts code.name
- puts country_code_prefix
+country_code_enter =("+269") #example
+country_code_enter= country_code_enter.gsub("+", '')
+code = IsoCountryCodes.find(country_code_enter)
+puts country_code_enter
+puts code.name
 
 
