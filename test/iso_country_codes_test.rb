@@ -83,6 +83,11 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.instance.name
   end
 
+  def test_get_ccode
+    assert_equal '61', IsoCountryCodes::Code::AUS.c_code
+    assert_equal '61', IsoCountryCodes::Code::AUS.instance.c_code
+  end
+
   def test_for_select
     assert       IsoCountryCodes::Code.for_select.is_a?(Array)
     assert_equal IsoCountryCodes::Code.for_select.length, IsoCountryCodes::Code.all.length

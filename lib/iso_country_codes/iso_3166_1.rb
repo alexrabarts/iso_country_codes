@@ -1,26 +1,17 @@
 # encoding: utf-8
-
-#error with all two digit ncountry codes when querying.
-#PROBLEM WITH UK AND BAHAMAS, #sometimes get mixed up with a 0
-#PROBLEM WITH United States Minor Outlying Islands} cant find dialing code
 # Heard Island and McDonald Islands no dialing code found
-# Svalbard and Jan Mayen no dialing code found
-# South Georgia and the South Sandwich Islands no code found
-# Dominican Republic no code found 
-# no calling code for bouvet island
-# antartica no calling code
 class IsoCountryCodes
   class Code
     class GBR < Code #:nodoc:
       self.numeric = %q{826}
-      self.c_code = %q{044}
+      self.c_code = %q{44}
       self.name    = %q{United Kingdom}
       self.alpha2  = %q{GB}
       self.alpha3  = %q{GBR}
     end
     class FJI < Code #:nodoc:
       self.numeric = %q{242}
-      self.c_code  = %q{679}      
+      self.c_code  = %q{679,}      
       self.name    = %q{Fiji}
       self.alpha2  = %q{FJ}
       self.alpha3  = %q{FJI}
@@ -255,6 +246,13 @@ class IsoCountryCodes
       self.name    = %q{Zambia}
       self.alpha2  = %q{ZM}
       self.alpha3  = %q{ZMB}
+    end
+    class AUS < Code #:nodoc:
+      self.numeric = %q{036}
+      self.c_code  = %q{61}
+      self.name    = %q{Australia}
+      self.alpha2  = %q{AU}
+      self.alpha3  = %q{AUS}
     end
     class MKD < Code #:nodoc:
       self.numeric = %q{807}
@@ -893,19 +891,19 @@ class IsoCountryCodes
       self.alpha2  = %q{KM}
       self.alpha3  = %q{COM}
     end
-    class UMI < Code #:nodoc:
-      self.numeric = %q{581}
-      self.c_code  = %q{351} 
-      self.name    = %q{United States Minor Outlying Islands}
-      self.alpha2  = %q{UM}
-      self.alpha3  = %q{UMI}
-    end
     class USA < Code #:nodoc:
       self.numeric = %q{840}
       self.c_code  = %q{1}
       self.name    = %q{United States}
       self.alpha2  = %q{US}
       self.alpha3  = %q{USA}
+    end
+    class UMI < Code #:nodoc:
+      self.numeric = %q{581}
+      self.c_code  = %q{1} 
+      self.name    = %q{United States Minor Outlying Islands}
+      self.alpha2  = %q{UM}
+      self.alpha3  = %q{UMI}
     end
     class KEN < Code #:nodoc:
       self.numeric = %q{404}
@@ -1231,7 +1229,7 @@ class IsoCountryCodes
     end
     class HMD < Code #:nodoc:
       self.numeric = %q{334}
-      self.c_code  = %q{355}
+      self.c_code  = %q{61}
       self.name    = %q{Heard Island and McDonald Islands}
       self.alpha2  = %q{HM}
       self.alpha3  = %q{HMD}
@@ -1301,7 +1299,7 @@ class IsoCountryCodes
     end
     class SJM < Code #:nodoc:
       self.numeric = %q{744}
-      self.c_code  = %q{355}
+      self.c_code  = %q{47}
       self.name    = %q{Svalbard and Jan Mayen} 
       self.alpha2  = %q{SJ}
       self.alpha3  = %q{SJM}
@@ -1350,7 +1348,7 @@ class IsoCountryCodes
     end
     class SGS < Code #:nodoc:
       self.numeric = %q{239}
-      self.c_code  = %q{355}
+      self.c_code  = %q{500}
       self.name    = %q{South Georgia and the South Sandwich Islands}
       self.alpha2  = %q{GS}
       self.alpha3  = %q{SGS}
@@ -1399,7 +1397,7 @@ class IsoCountryCodes
     end
     class DOM < Code #:nodoc:
       self.numeric = %q{214}
-      self.c_code  = %q{355}
+      self.c_code  = %q{809}
       self.name    = %q{Dominican Republic}
       self.alpha2  = %q{DO}
       self.alpha3  = %q{DOM}
@@ -1586,13 +1584,6 @@ class IsoCountryCodes
       self.alpha2  = %q{GL}
       self.alpha3  = %q{GRL}
     end
-    class AUS < Code #:nodoc:
-      self.numeric = %q{036}
-      self.c_code  = %q{61}
-      self.name    = %q{Australia}
-      self.alpha2  = %q{AU}
-      self.alpha3  = %q{AUS}
-    end
     class LBY < Code #:nodoc:
       self.numeric = %q{434}
       self.c_code  = %q{218}
@@ -1665,7 +1656,7 @@ class IsoCountryCodes
     end
     class ATA < Code #:nodoc:
       self.numeric = %q{010}
-      self.c_code  = %q{355}
+      self.c_code  = %q{1}
       self.name    = %q{Antarctica}
       self.alpha2  = %q{AQ}
       self.alpha3  = %q{ATA}
@@ -1721,7 +1712,7 @@ class IsoCountryCodes
     end
     class BVT < Code #:nodoc:
       self.numeric = %q{074}
-      self.c_code  = %q{355}
+      self.c_code  = %q{47}
       self.name    = %q{Bouvet Island}
       self.alpha2  = %q{BV}
       self.alpha3  = %q{BVT}
