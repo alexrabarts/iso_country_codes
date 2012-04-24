@@ -15,18 +15,24 @@ class IsoCountryCodes # :nodoc:
       code     = code.to_s.upcase
       instance = nil
 
+      if code[3..8] == "C_CODE"
+        code = code[0..2] 
+        instance = all.select { |c| c.c_code == code }.first
+      elsif code[2..8] == "C_CODE"
+        code = code[0..3] 
+        instance = all.select { |c| c.c_code == code }.first
+      end
+
       if code.match(/^\d{2}$/)
         code = "0#{code}" # Make numeric codes three digits
       end
 
       if code.match(/^\d{3}$/)
-        instance = all.select { |c| c.c_code == code }.first
+        instance = all.select { |c| c.numeric == code }.first
       elsif code.match(/^[A-Z]{2}$/)
         instance = all.select { |c| c.alpha2 == code }.first
       elsif code.match(/^[A-Z]{3}$/)
         instance = all.select { |c| c.alpha3 == code }.first
-      elsif code.match(/^[A-Z]{3}$/)
-        instance = all.select { |c| c.numeric == code }.first
       else
         instance = all.select { |c| c.name.upcase == code }.first
         if opts[:fuzzy]
@@ -35,9 +41,11 @@ class IsoCountryCodes # :nodoc:
         end
       end
 
+
       raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
 
       instance
     end
+
   end
 end
