@@ -1,5 +1,5 @@
 # encoding: utf-8
-
+#need to be two digit
 #error with all two digit ncountry codes when querying.
 #PROBLEM WITH UK AND BAHAMAS, #sometimes get mixed up with a 0
 #PROBLEM WITH United States Minor Outlying Islands} cant find dialing code
