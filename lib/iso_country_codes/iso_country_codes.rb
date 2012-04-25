@@ -33,12 +33,10 @@ class IsoCountryCodes # :nodoc:
         end
       end
 
-
       raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
 
       instance
     end
-
 
     def find_country(code, opts={})
       code = code.to_s.upcase
