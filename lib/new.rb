@@ -3,10 +3,14 @@ $LOAD_PATH << dir unless $LOAD_PATH.include?(dir)
 
 require 'iso_country_codes'
 
-country_code_enter =("506") #example
+country_code_enter =("1") #example
 country_code_enter= country_code_enter.gsub("+", '')
 
 code = IsoCountryCodes.find_country(country_code_enter)
 puts country_code_enter
-puts code.name
 
+if !code.respond_to?('exception')
+  p code.alpha2
+else
+  p code.message
+end

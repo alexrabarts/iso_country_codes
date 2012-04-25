@@ -1,5 +1,4 @@
 # encoding: utf-8
-# Heard Island and McDonald Islands no dialing code found
 class IsoCountryCodes
   class Code
     class GBR < Code #:nodoc:
