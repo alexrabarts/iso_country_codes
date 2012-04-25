@@ -43,18 +43,21 @@ class IsoCountryCodes # :nodoc:
     def find_country(code, opts={})
       code = code.to_s.upcase
       instance = nil
-begin
-      if code.match(/^\d{3}$/)
-        instance = all.select { |c| c.c_code == code }.first
-      elsif code.match(/^\d{2}$/)
-        instance = all.select { |c| c.c_code == code }.first
-      elsif code.match(/^\d{1}$/)
-        instance = all.select { |c| c.c_code == code }.first
+      begin
+        if code.match(/^\d{3}$/)
+          instance = all.select { |c| c.c_code == code }.first
+        elsif code.match(/^\d{2}$/)
+          instance = all.select { |c| c.c_code == code }.first
+        elsif code.match(/^\d{1}$/)
+          instance = all.select { |c| c.c_code == code }.first
+        end
+
+        raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
+
+        rescue UnknownCodeError => e
+          instance = e
       end
 
-rescue UnknownCodeError
-      raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
-end
       instance
     end
 
