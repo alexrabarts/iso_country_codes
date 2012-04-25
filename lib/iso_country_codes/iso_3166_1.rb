@@ -10,7 +10,7 @@ class IsoCountryCodes
     end
     class FJI < Code #:nodoc:
       self.numeric = %q{242}
-      self.c_code  = %q{679,}      
+      self.c_code  = %q{679}      
       self.name    = %q{Fiji}
       self.alpha2  = %q{FJ}
       self.alpha3  = %q{FJI}
@@ -171,7 +171,7 @@ class IsoCountryCodes
     end
     class PRI < Code #:nodoc:
       self.numeric = %q{630}
-      self.c_code  = %q{1787}
+      self.c_code  = %q{787}
       self.name    = %q{Puerto Rico}
       self.alpha2  = %q{PR}
       self.alpha3  = %q{PRI}
@@ -633,7 +633,7 @@ class IsoCountryCodes
     end
     class COG < Code #:nodoc:
       self.numeric = %q{178}
-      self.c_code  = %q{243}
+      self.c_code  = %q{242}
       self.name    = %q{Congo}
       self.alpha2  = %q{CG}
       self.alpha3  = %q{COG}
@@ -1501,7 +1501,7 @@ class IsoCountryCodes
     end
     class PCN < Code #:nodoc:
       self.numeric = %q{612}
-      self.c_code  = %q{64}
+      self.c_code  = %q{872}
       self.name    = %q{Pitcairn}
       self.alpha2  = %q{PN}
       self.alpha3  = %q{PCN}
