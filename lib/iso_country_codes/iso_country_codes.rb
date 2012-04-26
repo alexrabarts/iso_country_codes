@@ -50,7 +50,7 @@ class IsoCountryCodes # :nodoc:
           instance = all.select { |c| c.c_code == code }.first
         end
 
-        raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
+        raise UnknownCodeError, "Calling Code '#{code}' does not exist." if instance.nil?
 
         rescue UnknownCodeError => e
           instance = e
@@ -58,6 +58,7 @@ class IsoCountryCodes # :nodoc:
 
       instance
     end
+
 
      
 
