@@ -30,6 +30,10 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('AUS')
   end
 
+  def test_find_with_c_code_as_string
+    assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('36')
+  end
+
   def test_find_with_lowercase_name
     assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('australia')
   end
