@@ -30,6 +30,10 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('AUS')
   end
 
+  def test_find_with_c_code_as_string
+    assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('36')
+  end
+
   def test_find_with_lowercase_name
     assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('australia')
   end
@@ -81,6 +85,11 @@ class TestIsoCountryCodes < Test::Unit::TestCase
   def test_get_name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.instance.name
+  end
+
+  def test_get_ccode
+    assert_equal '61', IsoCountryCodes::Code::AUS.c_code
+    assert_equal '61', IsoCountryCodes::Code::AUS.instance.c_code
   end
 
   def test_for_select

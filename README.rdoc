@@ -2,11 +2,11 @@
 
 == DESCRIPTION:
 
-Provides ISO codes, names and currencies for countries.
+Provides ISO codes, dialing codes, names and currencies for countries.
 
 == FEATURES:
 
-* Search by name or code (alpha-2, alpha-3 or numeric)
+* Search by name, code or dialing code(alpha-2, alpha-3 or numeric)
 
 == SYNOPSIS:
 
@@ -16,11 +16,16 @@ Provides ISO codes, names and currencies for countries.
   code.numeric # => "036"
   code.alpha2  # => "AU"
   code.alpha3  # => "AUS"
+  code.c_code  # => "61"
 
-  # Codes can be found via numeric, alpha-2 or alpha-3 format
+  #Codes can be found via dialing code but must contain the find_country method
+  IsoCountryCodes.find_country("dialing_code_here")
+
+  # Codes can be found via numeric, dialing code, alpha-2 or alpha-3 format
   IsoCountryCodes.find(36)
   IsoCountryCodes.find('au')
   IsoCountryCodes.find('aus')
+  IsoCountryCodes.find_country("61")
 
   # Codes can be found by country name
   IsoCountryCodes.find('australia')
@@ -33,6 +38,15 @@ Provides ISO codes, names and currencies for countries.
 
   # Output an Array of countries and their codes for use form helper methods
   IsoCountryCodes.for_select # => Array
+
+
+  #Exception handling is included with the find country class. 
+  Example of usage:
+
+  if !code.respond_to?('exception')
+  else
+  p code.message
+  end
 
 == INSTALL:
 
