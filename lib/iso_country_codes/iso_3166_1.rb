@@ -1,17 +1,4 @@
 # encoding: utf-8
-<<<<<<< HEAD
-#need to be two digit
-#error with all two digit ncountry codes when querying.
-#PROBLEM WITH UK AND BAHAMAS, #sometimes get mixed up with a 0
-#PROBLEM WITH United States Minor Outlying Islands} cant find dialing code
-# Heard Island and McDonald Islands no dialing code found
-# Svalbard and Jan Mayen no dialing code found
-# South Georgia and the South Sandwich Islands no code found
-# Dominican Republic no code found 
-# no calling code for bouvet island
-# antartica no calling code
-=======
->>>>>>> mods
 class IsoCountryCodes
   class Code
     class GBR < Code #:nodoc:

@@ -19,11 +19,7 @@ class IsoCountryCodes # :nodoc:
         code = "0#{code}" # Make numeric codes three digits
       end
 
-<<<<<<< HEAD
-       if code.match(/^\d{3}$/)
-=======
       if code.match(/^\d{3}$/)
->>>>>>> mods
         instance = all.select { |c| c.numeric == code }.first
       elsif code.match(/^[A-Z]{2}$/)
         instance = all.select { |c| c.alpha2 == code }.first
@@ -37,7 +33,8 @@ class IsoCountryCodes # :nodoc:
         end
         
       end
-      raise UnknownCodeError, "Country code does not exist '#{code}' " if instance.nil?
+
+      raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
 
       instance
     end
