@@ -31,6 +31,7 @@ class IsoCountryCodes # :nodoc:
           instance = all.select { |c| c.name.match(/^#{code}/i) }.first if instance.nil?
           instance = all.select { |c| c.name.match(/#{code}/i) }.first if instance.nil?
         end
+        
       end
 
       raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
@@ -58,9 +59,6 @@ class IsoCountryCodes # :nodoc:
 
       instance
     end
-
-
-     
 
   end
 end
