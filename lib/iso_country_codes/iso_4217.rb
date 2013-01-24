@@ -103,7 +103,7 @@ class IsoCountryCodes
       self.main_currency = 'KRW'
     end
     class ZMB < Code #:nodoc:
-      self.main_currency = 'ZMK'
+      self.main_currency = 'ZMW'
     end
     class MKD < Code #:nodoc:
       self.main_currency = 'MKD'
