@@ -1,4 +1,8 @@
-=== 0.2.4 / 2012-03-13
+=== 0.3.1 / 2013-01-28
+
+* Updated with the latest data from Wikipedia
+
+=== 0.3.0 / 2012-03-13
 
 * Added IsoCountryCodes.for_select convenience method
 * Updated with the latest country names from Wikipedia
