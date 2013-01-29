@@ -11,7 +11,7 @@ class IsoCountryCodes # :nodoc:
       Code.all
     end
 
-    def find(code, opts={})
+    def find(code)
       code     = code.to_s.upcase
       instance = nil
 
@@ -25,17 +25,47 @@ class IsoCountryCodes # :nodoc:
         instance = all.select { |c| c.alpha2 == code }.first
       elsif code.match(/^[A-Z]{3}$/)
         instance = all.select { |c| c.alpha3 == code }.first
-      else
-        instance = all.select { |c| c.name.upcase == code }.first
-        if opts[:fuzzy]
-          instance = all.select { |c| c.name.match(/^#{code}/i) }.first if instance.nil?
-          instance = all.select { |c| c.name.match(/#{code}/i) }.first if instance.nil?
-        end
       end
 
-      raise UnknownCodeError, "ISO 3166-1 code '#{code}' does not exist." if instance.nil?
+      raise UnknownCodeError, "No ISO 3166-1 code could be found for '#{code}'." if instance.nil?
 
       instance
+    end
+
+    def search_by_name(str)
+      instances = all.select { |c| c.name.upcase == str }
+      instances = all.select { |c| c.name.match(/^#{str}/i) } if instances.empty?
+      instances = all.select { |c| c.name.match(/#{str}/i) } if instances.empty?
+
+      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with name '#{code}'." if instances.empty?
+
+      instances
+    end
+
+    def search_by_calling_code(code)
+      code = "+#{code.to_i}" # Normalize code
+      instances = all.select { |c| c.calling == code }
+
+      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with calling code '#{code}'." if instances.empty?
+
+      instances
+    end
+
+    def search_by_calling(code) # Alias of search_by_calling_code
+      search_by_calling_code code
+    end
+
+    def search_by_currency(code)
+      code = code.to_str.upcase
+      instances = all.select { |c|
+        c.currencies.select { |currency|
+          currency != code
+        }.empty?
+      }
+
+      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with currency '#{code}'." if instances.empty?
+
+      instances
     end
   end
 end

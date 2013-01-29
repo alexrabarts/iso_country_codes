@@ -6,7 +6,8 @@ Provides ISO codes, names and currencies for countries.
 
 == FEATURES:
 
-* Search by name or code (alpha-2, alpha-3 or numeric)
+* Find by alpha-2, alpha-3 or numeric codes
+* Search by name, currency code or calling/dialing code
 
 == SYNOPSIS:
 
@@ -16,17 +17,17 @@ Provides ISO codes, names and currencies for countries.
   code.numeric # => "036"
   code.alpha2  # => "AU"
   code.alpha3  # => "AUS"
+  code.calling # => "+61"
 
   # Codes can be found via numeric, alpha-2 or alpha-3 format
   IsoCountryCodes.find(36)
   IsoCountryCodes.find('au')
   IsoCountryCodes.find('aus')
 
-  # Codes can be found by country name
-  IsoCountryCodes.find('australia')
-
-  # Inexact matches can also be found
-  IsoCountryCodes.find('united', :fuzzy => true).name # => 'United Kingdom'
+  # Codes can also be returned by searching country name, currency or calling/dialing code
+  IsoCountryCodes.search_by_name('australia')
+  IsoCountryCodes.search_by_currency('aud')
+  IsoCountryCodes.search_by_calling_code('+61')
 
   # Fetch a country's local currency
   IsoCountryCodes.find('aus').currency # => "AUD"

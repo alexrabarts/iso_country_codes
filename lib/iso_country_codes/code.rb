@@ -20,6 +20,14 @@ class IsoCountryCodes
       self.class.alpha3
     end
 
+    def calling
+      self.class.calling
+    end
+
+    def calling_code
+      self.class.calling_code
+    end
+
     def main_currency
       self.class.main_currency
     end
@@ -33,9 +41,10 @@ class IsoCountryCodes
     end
 
     class << self
-      attr_accessor :name, :numeric, :alpha2, :alpha3, :main_currency
+      attr_accessor :name, :numeric, :alpha2, :alpha3, :calling, :main_currency
       attr_writer :currencies
       alias_method :currency, :main_currency
+      alias_method :calling_code, :calling
 
       @@codes = []
       def inherited(code) #:nodoc:
