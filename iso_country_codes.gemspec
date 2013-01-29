@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{iso_country_codes}
-  s.version = "0.3.1"
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["alex"]
-  s.date = %q{2013-01-28}
+  s.date = %q{2013-01-29}
   s.description = %q{ISO country code and currency library}
   s.email = %q{alexrabarts@gmail.com}
   s.extra_rdoc_files = [
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "VERSION.yml",
      "iso_country_codes.gemspec",
      "lib/iso_country_codes.rb",
+     "lib/iso_country_codes/calling.rb",
      "lib/iso_country_codes/code.rb",
      "lib/iso_country_codes/iso_3166_1.rb",
      "lib/iso_country_codes/iso_4217.rb",
