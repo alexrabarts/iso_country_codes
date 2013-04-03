@@ -37,7 +37,7 @@ class IsoCountryCodes # :nodoc:
       instances = all.select { |c| c.name.match(/^#{str}/i) } if instances.empty?
       instances = all.select { |c| c.name.match(/#{str}/i) } if instances.empty?
 
-      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with name '#{code}'." if instances.empty?
+      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with name '#{str}'." if instances.empty?
 
       instances
     end
