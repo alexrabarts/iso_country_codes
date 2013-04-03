@@ -1,11 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    git (1.2.5)
-    jeweler (1.6.4)
-      bundler (~> 1.0)
-      git (>= 1.2.5)
-      rake
     json (1.6.1)
     nokogiri (1.5.2)
     rake (0.9.2.2)
@@ -16,7 +11,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jeweler
   nokogiri
   rake
   rdoc
