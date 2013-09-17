@@ -1,3 +1,7 @@
+=== 0.4.2 / 2013-09-17
+
+* Fixed a problem with IsoCountryCodes.search_by_name when the result is an exact match
+
 === 0.4.1 / 2013-04-03
 
 * Fixed a problem with IsoCountryCodes.search_by_name when an exception is thrown

@@ -33,7 +33,7 @@ class IsoCountryCodes # :nodoc:
     end
 
     def search_by_name(str)
-      instances = all.select { |c| c.name.upcase == str }
+      instances = all.select { |c| c.name.upcase == str.upcase }
       instances = all.select { |c| c.name.match(/^#{str}/i) } if instances.empty?
       instances = all.select { |c| c.name.match(/#{str}/i) } if instances.empty?
 

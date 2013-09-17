@@ -71,6 +71,13 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     end
   end
 
+  def test_search_by_name_exact_match
+    assert_equal(
+      [IsoCountryCodes::Code::CCK.instance],
+      IsoCountryCodes.search_by_name('Cocos (Keeling) Islands')
+    )
+  end
+
   def test_search_by_currency_lowercase
     assert_equal([
       IsoCountryCodes::Code::CCK.instance,
