@@ -1,4 +1,5 @@
 = iso_country_codes
+{<img src="https://travis-ci.org/alexrabarts/iso_country_codes.png" alt="Build Status" />}[https://travis-ci.org/alexrabarts/iso_country_codes]
 
 == DESCRIPTION:
 
