@@ -744,7 +744,7 @@ class IsoCountryCodes
       self.main_currency = 'KGS'
     end
     class EST < Code #:nodoc:
-      self.main_currency = 'EEK'
+      self.main_currency = 'EUR'
     end
     class GNB < Code #:nodoc:
       self.main_currency = 'XOF'
