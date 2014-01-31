@@ -238,7 +238,7 @@ class IsoCountryCodes
       self.main_currency = 'PHP'
     end
     class LVA < Code #:nodoc:
-      self.main_currency = 'LVL'
+      self.main_currency = 'EUR'
     end
     class COD < Code #:nodoc:
       self.main_currency = 'CDF'
