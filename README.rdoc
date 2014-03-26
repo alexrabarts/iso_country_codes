@@ -1,5 +1,12 @@
-= iso_country_codes
+<<<<<<< 2909843eba40c1b63f7e5dfd66e6347004bcc7e1
 {<img src="https://travis-ci.org/alexrabarts/iso_country_codes.svg" alt="Build Status" />}[https://travis-ci.org/alexrabarts/iso_country_codes]
+
+== ABOUT THIS FORK:
+
+DO NOT USE THIS.
+
+We have wrong codes for three countries in some legacy systems and we have to deal with it.
+In the meantime, we applied our wrong codes to this gem for an easier upgrade path.
 
 == DESCRIPTION:
 
