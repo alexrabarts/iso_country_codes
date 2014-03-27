@@ -18,11 +18,12 @@ class IsoCountryCodes
     LEGACY_CODES.invert[iso_2.upcase]
   end
 
-  class << Code
-    alias_method :orig_alpha2, :alpha2=
-    private :orig_alpha2
-    def alpha2=(code)
-      orig_alpha2(IsoCountryCodes.legacy(code) || code)
+  class << IsoCountryCodes
+    alias_method :orig_find, :find
+    private :orig_find
+
+    def find(code)
+      orig_find(IsoCountryCodes.current(code) || code)
     end
   end
 
