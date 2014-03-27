@@ -95,7 +95,7 @@ class IsoCountryCodes
     class SRB < Code #:nodoc:
       self.numeric = %q{688}
       self.name    = %q{Serbia}
-      self.alpha2  = %q{YU}#%q{RS} IFAD WRONG CODE
+      self.alpha2  = %q{YG}#%q{RS} IFAD WRONG CODE
       self.alpha3  = %q{SRB}
     end
     class AZE < Code #:nodoc:
