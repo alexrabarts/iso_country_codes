@@ -20,7 +20,7 @@ class IsoCountryCodes
     alias_method :orig_alpha2, :alpha2=
     private :orig_alpha2
     def alpha2=(code)
-      orig_alpha2(IFAD.legacy(code) || code)
+      orig_alpha2(IsoCountryCodes.legacy(code) || code)
     end
   end
 
