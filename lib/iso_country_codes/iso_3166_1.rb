@@ -92,6 +92,12 @@ class IsoCountryCodes
       self.alpha2  = %q{AT}
       self.alpha3  = %q{AUT}
     end
+    class SRB < Code #:nodoc:
+      self.numeric = %q{688}
+      self.name    = %q{Serbia}
+      self.alpha2  = %q{YU}#%q{RS} IFAD WRONG CODE
+      self.alpha3  = %q{SRB}
+    end
     class AZE < Code #:nodoc:
       self.numeric = %q{031}
       self.name    = %q{Azerbaijan}
@@ -308,12 +314,6 @@ class IsoCountryCodes
       self.alpha2  = %q{CG}
       self.alpha3  = %q{COG}
     end
-    class COD < Code #:nodoc:
-      self.numeric = %q{180}
-      self.name    = %q{Congo (Democratic Republic of the)}
-      self.alpha2  = %q{CD}
-      self.alpha3  = %q{COD}
-    end
     class COK < Code #:nodoc:
       self.numeric = %q{184}
       self.name    = %q{Cook Islands}
@@ -421,6 +421,12 @@ class IsoCountryCodes
       self.name    = %q{Estonia}
       self.alpha2  = %q{EE}
       self.alpha3  = %q{EST}
+    end
+    class COD < Code #:nodoc:
+      self.numeric = %q{180}
+      self.name    = %q{Congo, the Democratic Republic of the}
+      self.alpha2  = %q{ZR}#%q{CD} IFAD WRONG CODE
+      self.alpha3  = %q{COD}
     end
     class ETH < Code #:nodoc:
       self.numeric = %q{231}
@@ -926,6 +932,12 @@ class IsoCountryCodes
       self.alpha2  = %q{NA}
       self.alpha3  = %q{NAM}
     end
+    class TLS < Code #:nodoc:
+      self.numeric = %q{626}
+      self.name    = %q{Timor-Leste}
+      self.alpha2  = %q{TP}#%q{TL} IFAD WRONG CODE
+      self.alpha3  = %q{TLS}
+    end
     class NRU < Code #:nodoc:
       self.numeric = %q{520}
       self.name    = %q{Nauru}
@@ -1178,12 +1190,6 @@ class IsoCountryCodes
       self.alpha2  = %q{SN}
       self.alpha3  = %q{SEN}
     end
-    class SRB < Code #:nodoc:
-      self.numeric = %q{688}
-      self.name    = %q{Serbia}
-      self.alpha2  = %q{RS}
-      self.alpha3  = %q{SRB}
-    end
     class SYC < Code #:nodoc:
       self.numeric = %q{690}
       self.name    = %q{Seychelles}
@@ -1327,12 +1333,6 @@ class IsoCountryCodes
       self.name    = %q{Thailand}
       self.alpha2  = %q{TH}
       self.alpha3  = %q{THA}
-    end
-    class TLS < Code #:nodoc:
-      self.numeric = %q{626}
-      self.name    = %q{Timor-Leste}
-      self.alpha2  = %q{TL}
-      self.alpha3  = %q{TLS}
     end
     class TGO < Code #:nodoc:
       self.numeric = %q{768}
