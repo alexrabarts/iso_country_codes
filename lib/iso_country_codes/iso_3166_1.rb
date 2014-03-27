@@ -107,7 +107,7 @@ class IsoCountryCodes
     class SRB < Code #:nodoc:
       self.numeric = %q{688}
       self.name    = %q{Serbia}
-      self.alpha2  = %q{YG}#%q{RS} IFAD WRONG CODE
+      self.alpha2  = %q{RS}
       self.alpha3  = %q{SRB}
     end
     class TJK < Code #:nodoc:
@@ -461,7 +461,7 @@ class IsoCountryCodes
     class COD < Code #:nodoc:
       self.numeric = %q{180}
       self.name    = %q{Congo, the Democratic Republic of the}
-      self.alpha2  = %q{ZR}#%q{CD} IFAD WRONG CODE
+      self.alpha2  = %q{CD}
       self.alpha3  = %q{COD}
     end
     class CYM < Code #:nodoc:
@@ -911,7 +911,7 @@ class IsoCountryCodes
     class TLS < Code #:nodoc:
       self.numeric = %q{626}
       self.name    = %q{Timor-Leste}
-      self.alpha2  = %q{TP}#%q{TL} IFAD WRONG CODE
+      self.alpha2  = %q{TL}
       self.alpha3  = %q{TLS}
     end
     class NRU < Code #:nodoc:
