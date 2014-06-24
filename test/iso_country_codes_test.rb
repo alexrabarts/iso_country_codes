@@ -50,18 +50,18 @@ class TestIsoCountryCodes < Test::Unit::TestCase
 
   def test_search_by_name_returning_many_results_starting_wth_the_search_string
     assert_equal([
+      IsoCountryCodes::Code::ARE.instance,
       IsoCountryCodes::Code::GBR.instance,
-      IsoCountryCodes::Code::UMI.instance,
       IsoCountryCodes::Code::USA.instance,
-      IsoCountryCodes::Code::ARE.instance
+      IsoCountryCodes::Code::UMI.instance
     ], IsoCountryCodes.search_by_name('united'))
   end
 
   def test_search_by_name_returning_many_results_not_starting_with_the_search_string
     assert_equal([
-      IsoCountryCodes::Code::LAO.instance,
+      IsoCountryCodes::Code::COD.instance,
       IsoCountryCodes::Code::PRK.instance,
-      IsoCountryCodes::Code::COD.instance
+      IsoCountryCodes::Code::LAO.instance
     ], IsoCountryCodes.search_by_name('democratic'))
   end
 
@@ -80,25 +80,25 @@ class TestIsoCountryCodes < Test::Unit::TestCase
 
   def test_search_by_currency_lowercase
     assert_equal([
+      IsoCountryCodes::Code::AUS.instance,
+      IsoCountryCodes::Code::CXR.instance,
       IsoCountryCodes::Code::CCK.instance,
-      IsoCountryCodes::Code::NFK.instance,
+      IsoCountryCodes::Code::HMD.instance,
       IsoCountryCodes::Code::KIR.instance,
       IsoCountryCodes::Code::NRU.instance,
-      IsoCountryCodes::Code::CXR.instance,
-      IsoCountryCodes::Code::HMD.instance,
-      IsoCountryCodes::Code::AUS.instance
+      IsoCountryCodes::Code::NFK.instance
     ], IsoCountryCodes.search_by_currency('aud'))
   end
 
   def test_search_by_currency_uppercase
     assert_equal([
+      IsoCountryCodes::Code::AUS.instance,
+      IsoCountryCodes::Code::CXR.instance,
       IsoCountryCodes::Code::CCK.instance,
-      IsoCountryCodes::Code::NFK.instance,
+      IsoCountryCodes::Code::HMD.instance,
       IsoCountryCodes::Code::KIR.instance,
       IsoCountryCodes::Code::NRU.instance,
-      IsoCountryCodes::Code::CXR.instance,
-      IsoCountryCodes::Code::HMD.instance,
-      IsoCountryCodes::Code::AUS.instance
+      IsoCountryCodes::Code::NFK.instance
     ], IsoCountryCodes.search_by_currency('AUD'))
   end
 
@@ -111,9 +111,9 @@ class TestIsoCountryCodes < Test::Unit::TestCase
   def test_search_by_calling_code
     assert_equal [IsoCountryCodes::Code::ZAF.instance], IsoCountryCodes.search_by_calling_code('+27')
     assert_equal([
+      IsoCountryCodes::Code::AUS.instance,
       IsoCountryCodes::Code::CXR.instance,
-      IsoCountryCodes::Code::HMD.instance,
-      IsoCountryCodes::Code::AUS.instance
+      IsoCountryCodes::Code::HMD.instance
     ], IsoCountryCodes.search_by_calling_code('+61'))
   end
 
