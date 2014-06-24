@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
 
   ['bundler', 'shoulda', 'mocha', 'nokogiri'].each do |gem|
-    s.add_development_dependency *gem.split(' ')
+    s.add_development_dependency gem, '~> 0'
   end
 end
