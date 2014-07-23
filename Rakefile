@@ -1,6 +1,5 @@
 require 'rake'
 require './lib/iso_country_codes.rb'
-require 'bundler/gem_tasks'
 require 'rake/testtask'
 
 Rake::TestTask.new(:test) do |t|
