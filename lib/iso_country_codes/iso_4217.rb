@@ -100,7 +100,7 @@ class IsoCountryCodes
       self.main_currency = 'XCD'
     end
     class PRK < Code #:nodoc:
-      self.main_currency = 'KRW'
+      self.main_currency = 'KPW'
     end
     class ZMB < Code #:nodoc:
       self.main_currency = 'ZMW'
@@ -310,7 +310,7 @@ class IsoCountryCodes
       self.main_currency = 'CUP'
     end
     class KOR < Code #:nodoc:
-      self.main_currency = 'KPW'
+      self.main_currency = 'KRW'
     end
     class MDG < Code #:nodoc:
       self.main_currency = 'MGA'
