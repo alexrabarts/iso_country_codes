@@ -1,11 +1,13 @@
 class IsoCountryCodes
 
-  # List of legacy ISO-2 codes used in IFAD.
+  # List of legacy ISO-2 and ISO-3 codes used in IFAD.
   # These should be changed as soon as possible in other systems.
   LEGACY_CODES = {
-    'CD' => 'ZR',
-    'RS' => 'YG',
-    'TL' => 'TP',
+    'CD'  => 'ZR',
+    'RS'  => 'YG',
+    'TL'  => 'TP',
+    'IT'  => 'IF', # IFAD is a Country for PeopleSoft
+    'ITA' => 'IFA' # IFAD is a Country for PeopleSoft
   }.freeze
 
   def self.legacy(iso_2)
