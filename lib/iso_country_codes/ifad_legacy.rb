@@ -8,6 +8,8 @@ class IsoCountryCodes
     'TL'  => 'TP',
     'COD' => 'CDR',
     'PSE' => 'PAL',
+    'TLS' => 'TMP',
+    'TL'  => 'TP',
     'IT'  => 'IF', # IFAD is a Country for PeopleSoft
     'ITA' => 'IFA' # IFAD is a Country for PeopleSoft
   }.freeze
