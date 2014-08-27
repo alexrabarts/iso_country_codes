@@ -10,12 +10,13 @@ Gem::Specification.new do |s|
   s.email = %q{alexrabarts@gmail.com}
   s.extra_rdoc_files = ["README.rdoc"]
   s.files = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ['lib']
+  s.license = 'MIT'
 
   ['bundler', 'shoulda', 'mocha', 'nokogiri'].each do |gem|
-    s.add_development_dependency *gem.split(' ')
+    s.add_development_dependency gem, '~> 0'
   end
 end
