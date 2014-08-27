@@ -6,6 +6,7 @@ class IsoCountryCodes
     'CD'  => 'ZR',
     'RS'  => 'YG',
     'TL'  => 'TP',
+    'COD' => 'CDR',
     'IT'  => 'IF', # IFAD is a Country for PeopleSoft
     'ITA' => 'IFA' # IFAD is a Country for PeopleSoft
   }.freeze
