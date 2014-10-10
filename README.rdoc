@@ -20,12 +20,13 @@ Provides ISO codes, names and currencies for countries.
 
   # Finding an ISO code returns the country name and other code formats
   code = IsoCountryCodes.find('au')
-  code.name    # => "Australia"
-  code.numeric # => "036"
-  code.alpha2  # => "AU"
-  code.alpha3  # => "AUS"
-  code.calling # => "+61"
-
+  code.name      # => "Australia"
+  code.numeric   # => "036"
+  code.alpha2    # => "AU"
+  code.alpha3    # => "AUS"
+  code.calling   # => "+61"
+  code.continent # => "OC"
+  
   # Codes can be found via numeric, alpha-2 or alpha-3 format
   IsoCountryCodes.find(36)
   IsoCountryCodes.find('au')
