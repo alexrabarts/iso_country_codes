@@ -1,4 +1,3 @@
-<<<<<<< 2909843eba40c1b63f7e5dfd66e6347004bcc7e1
 {<img src="https://travis-ci.org/alexrabarts/iso_country_codes.svg" alt="Build Status" />}[https://travis-ci.org/alexrabarts/iso_country_codes]
 
 == ABOUT THIS FORK:
