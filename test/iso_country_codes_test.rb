@@ -162,6 +162,11 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal code.calling, code.calling_code
   end
 
+  def test_get_continent
+    assert_equal 'OC', IsoCountryCodes::Code::AUS.continent
+    assert_equal 'NA', IsoCountryCodes::Code::USA.continent
+  end
+
   def test_get_name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.instance.name
