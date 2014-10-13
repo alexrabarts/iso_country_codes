@@ -20,7 +20,7 @@ Provides ISO codes, names and currencies for countries.
   code.alpha3    # => "AUS"
   code.calling   # => "+61"
   code.continent # => "OC"
-  
+
   # Codes can be found via numeric, alpha-2 or alpha-3 format
   IsoCountryCodes.find(36)
   IsoCountryCodes.find('au')
