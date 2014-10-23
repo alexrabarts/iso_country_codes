@@ -11,7 +11,10 @@ class IsoCountryCodes # :nodoc:
       Code.all
     end
 
-    def find(code)
+    DEFAULT_FALLBACK = lambda { |error| raise UnknownCodeError, error }
+
+    def find(code, &fallback)
+      fallback ||= DEFAULT_FALLBACK
       code     = code.to_s.upcase
       instance = nil
 
@@ -27,35 +30,41 @@ class IsoCountryCodes # :nodoc:
         instance = all.select { |c| c.alpha3 == code }.first
       end
 
-      raise UnknownCodeError, "No ISO 3166-1 code could be found for '#{code}'." if instance.nil?
+      return fallback.call "No ISO 3166-1 code could be found for '#{code}'." if instance.nil?
 
       instance
     end
 
-    def search_by_name(str)
+    def search_by_name(str, &fallback)
+      fallback ||= DEFAULT_FALLBACK
+
       instances = all.select { |c| c.name.upcase == str.upcase }
       instances = all.select { |c| c.name.match(/^#{str}/i) } if instances.empty?
       instances = all.select { |c| c.name.match(/#{str}/i) } if instances.empty?
 
-      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with name '#{str}'." if instances.empty?
+      return fallback.call "No ISO 3166-1 codes could be found searching with name '#{str}'." if instances.empty?
 
       instances
     end
 
-    def search_by_calling_code(code)
+    def search_by_calling_code(code, &fallback)
+      fallback ||= DEFAULT_FALLBACK
+
       code = "+#{code.to_i}" # Normalize code
       instances = all.select { |c| c.calling == code }
 
-      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with calling code '#{code}'." if instances.empty?
+      return fallback.call "No ISO 3166-1 codes could be found searching with calling code '#{code}'." if instances.empty?
 
       instances
     end
 
-    def search_by_calling(code) # Alias of search_by_calling_code
-      search_by_calling_code code
+    def search_by_calling(code, &fallback) # Alias of search_by_calling_code
+      search_by_calling_code code, &fallback
     end
 
-    def search_by_currency(code)
+    def search_by_currency(code, &fallback)
+      fallback ||= DEFAULT_FALLBACK
+
       code = code.to_str.upcase
       instances = all.select { |c|
         c.currencies.select { |currency|
@@ -63,7 +72,7 @@ class IsoCountryCodes # :nodoc:
         }.empty?
       }
 
-      raise UnknownCodeError, "No ISO 3166-1 codes could be found searching with currency '#{code}'." if instances.empty?
+      return fallback.call "No ISO 3166-1 codes could be found searching with currency '#{code}'." if instances.empty?
 
       instances
     end
