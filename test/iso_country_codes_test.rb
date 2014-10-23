@@ -28,6 +28,17 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     end
   end
 
+  def test_find_with_unknown_alpha2_code_and_raise_custom_exception
+    assert_raise ArgumentError do
+      IsoCountryCodes.find('xx') { |error| raise ArgumentError }
+    end
+  end
+
+  def test_find_with_unknown_alpha2_code_and_return_custom_value
+    assert_equal IsoCountryCodes.find('xx') { IsoCountryCodes::Code::AUS.instance },
+      IsoCountryCodes::Code::AUS.instance
+  end
+
   def test_find_with_lowercase_alpha3
     assert_equal IsoCountryCodes::Code::AUS.instance, IsoCountryCodes.find('aus')
   end
@@ -71,6 +82,16 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     end
   end
 
+  def test_search_by_name_unknown_country_and_raise_custom_exception
+    assert_raise ArgumentError do
+      IsoCountryCodes.search_by_name('unknown country') {|error| raise ArgumentError }
+    end
+  end
+
+  def test_search_by_name_unknown_country_and_return_custom_value
+    assert_equal IsoCountryCodes.search_by_name('unknown country') {[]}, []
+  end
+
   def test_search_by_name_exact_match
     assert_equal(
       [IsoCountryCodes::Code::CCK.instance],
@@ -108,6 +129,16 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     end
   end
 
+  def test_search_by_currency_invalid_value_and_raise_custom_exception
+    assert_raise ArgumentError do
+      IsoCountryCodes.search_by_currency('USS') { |error| raise ArgumentError }
+    end
+  end
+
+  def test_search_by_currency_invalid_value_and_return_custom_value
+    assert_equal IsoCountryCodes.search_by_currency('USS') {[]}, []
+  end
+
   def test_search_by_calling_code
     assert_equal [IsoCountryCodes::Code::ZAF.instance], IsoCountryCodes.search_by_calling_code('+27')
     assert_equal([
@@ -121,6 +152,16 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_raise IsoCountryCodes::UnknownCodeError do
       IsoCountryCodes.search_by_calling_code('00')
     end
+  end
+
+  def test_search_by_calling_code_invalid_value_and_raise_custom_exception
+    assert_raise ArgumentError do
+      IsoCountryCodes.search_by_calling_code('00'){ |error| raise ArgumentError }
+    end
+  end
+
+  def test_search_by_calling_code_invalid_value_and_return_custom_value
+    assert_equal IsoCountryCodes.search_by_calling_code('00') {[]}, []
   end
 
   def test_get_main_currency
@@ -184,6 +225,16 @@ class TestIsoCountryCodes < Test::Unit::TestCase
   def test_unknown_iso_code
     assert_raises IsoCountryCodes::UnknownCodeError do
       IsoCountryCodes.find('FOO')
+    end
+  end
+
+  def test_unknown_iso_code_and_return_custom_value
+    assert_equal IsoCountryCodes.find('FOO') { [] }, []
+  end
+
+  def test_unknown_iso_code_and_raise_custom_error
+    assert_raise ArgumentError do
+      IsoCountryCodes.find('FOO') { |error| raise ArgumentError }
     end
   end
 end
