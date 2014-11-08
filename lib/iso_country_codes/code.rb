@@ -28,6 +28,10 @@ class IsoCountryCodes
       self.class.calling_code
     end
 
+    def continent
+      self.class.continent
+    end
+    
     def main_currency
       self.class.main_currency
     end
