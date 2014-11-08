@@ -205,7 +205,7 @@ class TestIsoCountryCodes < Test::Unit::TestCase
 
   def test_get_continent
     assert_equal 'OC', IsoCountryCodes::Code::AUS.continent
-    assert_equal 'NA', IsoCountryCodes::Code::USA.continent
+    assert_equal 'NA', IsoCountryCodes::Code::USA.instance.continent
   end
 
   def test_get_name
