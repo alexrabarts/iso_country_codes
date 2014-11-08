@@ -1,3 +1,7 @@
+=== 0.6.1 / 2014-11-08
+
+* Allows continents to be accessed in a class instance
+
 === 0.6.0 / 2014-10-23
 
 * Added ability to raise custom fallbacks and return default values
