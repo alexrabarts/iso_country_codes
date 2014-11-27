@@ -5,4 +5,5 @@ gem 'rdoc'
 
 group :development do
   gem 'nokogiri'
+  gem 'erubis'
 end
