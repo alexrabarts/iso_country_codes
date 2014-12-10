@@ -18,12 +18,12 @@ class IsoCountryCodes
 
   def self.legacy(iso_2)
     return unless iso_2
-    LEGACY_CODES[iso_2.upcase]
+    LEGACY_CODES[iso_2.to_s.upcase]
   end
 
   def self.current(iso_2)
     return unless iso_2
-    LEGACY_CODES.invert[iso_2.upcase]
+    LEGACY_CODES.invert[iso_2.to_s.upcase]
   end
 
   class << IsoCountryCodes
