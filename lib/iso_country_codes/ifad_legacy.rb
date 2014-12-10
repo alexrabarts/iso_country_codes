@@ -30,8 +30,8 @@ class IsoCountryCodes
     alias_method :orig_find, :find
     private :orig_find
 
-    def find(code)
-      orig_find(IsoCountryCodes.current(code) || code)
+    def find(code, &block)
+      orig_find(IsoCountryCodes.current(code) || code, &block)
     end
   end
 
