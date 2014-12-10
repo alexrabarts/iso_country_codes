@@ -8,5 +8,6 @@ require 'iso_country_codes/iso_4217'
 require 'iso_country_codes/calling'
 require 'iso_country_codes/continent'
 require 'iso_country_codes/iso_country_codes'
+require 'iso_country_codes/old_countries'
 
 require 'iso_country_codes/ifad_legacy'
