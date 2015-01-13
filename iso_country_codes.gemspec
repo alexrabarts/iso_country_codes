@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ['lib']
   s.license = 'MIT'
+  s.add_dependency 'i18n'
 
   ['bundler', 'shoulda', 'mocha', 'nokogiri'].each do |gem|
     s.add_development_dependency gem, '~> 0'

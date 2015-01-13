@@ -59,6 +59,12 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal [IsoCountryCodes::Code::AUS.instance], IsoCountryCodes.search_by_name('Australia')
   end
 
+  def test_search_with_localized_name
+    I18n.locale = :'pt-BR'
+    assert_equal [IsoCountryCodes::Code::AUS.instance], IsoCountryCodes.search_by_name('austrália')
+    I18n.locale = :en
+  end
+
   def test_search_by_name_returning_many_results_starting_wth_the_search_string
     assert_equal([
       IsoCountryCodes::Code::ARE.instance,
@@ -211,6 +217,13 @@ class TestIsoCountryCodes < Test::Unit::TestCase
   def test_get_name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.name
     assert_equal 'Australia', IsoCountryCodes::Code::AUS.instance.name
+  end
+
+  def test_get_name_with_localization
+    I18n.locale = :'pt-BR'
+    assert_equal 'Austrália', IsoCountryCodes::Code::AUS.name
+    assert_equal 'Austrália', IsoCountryCodes::Code::AUS.instance.name
+    I18n.locale = :en
   end
 
   def test_for_select
