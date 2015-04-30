@@ -198,6 +198,16 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal '+61', IsoCountryCodes::Code::AUS.instance.calling
   end
 
+  def test_get_iban
+    assert_equal 'FR', IsoCountryCodes::Code::FRA.iban
+    assert_equal 'FR', IsoCountryCodes::Code::FRA.instance.iban
+  end
+
+  def test_get_iban_for_non_iban_country
+    assert_equal nil, IsoCountryCodes::Code::USA.iban
+    assert_equal nil, IsoCountryCodes::Code::USA.instance.iban
+  end
+
   def test_get_calling_code_alias
     code = IsoCountryCodes::Code::AUS.instance
     assert_equal code.calling, code.calling_code

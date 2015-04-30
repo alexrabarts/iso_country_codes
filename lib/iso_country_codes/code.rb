@@ -31,7 +31,7 @@ class IsoCountryCodes
     def continent
       self.class.continent
     end
-    
+
     def main_currency
       self.class.main_currency
     end
@@ -44,8 +44,12 @@ class IsoCountryCodes
       self.class.currencies
     end
 
+    def iban
+      self.class.iban
+    end
+
     class << self
-      attr_accessor :name, :numeric, :alpha2, :alpha3, :calling, :continent, :main_currency
+      attr_accessor :name, :numeric, :alpha2, :alpha3, :calling, :continent, :main_currency, :iban
       attr_writer :currencies
       alias_method :currency, :main_currency
       alias_method :calling_code, :calling
@@ -70,6 +74,11 @@ class IsoCountryCodes
         else
           return [@main_currency]
         end
+      end
+
+      def iban
+        # Return `nil` if the country doesn't use IBANs
+        return @iban if defined? @iban
       end
     end
   end
