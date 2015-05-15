@@ -54,6 +54,10 @@ class IsoCountryCodes
       alias_method :currency, :main_currency
       alias_method :calling_code, :calling
 
+      def name
+        I18n.t "iso_country_codes.country_names.#{alpha3}"
+      end
+
       @@codes = []
       def inherited(code) #:nodoc:
         super
