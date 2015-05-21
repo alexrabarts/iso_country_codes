@@ -76,5 +76,16 @@ class IsoCountryCodes # :nodoc:
 
       instances
     end
+
+    def search_by_iban(code, &fallback)
+      fallback ||= DEFAULT_FALLBACK
+
+      code = code.to_str.upcase
+      instances = all.select { |c| c.iban == code }
+
+      return fallback.call "No ISO 3166-1 codes could be found searching with IBAN '#{code}'." if instances.empty?
+
+      instances
+    end
   end
 end

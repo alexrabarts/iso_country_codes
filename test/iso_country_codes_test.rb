@@ -164,6 +164,30 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal IsoCountryCodes.search_by_calling_code('00') {[]}, []
   end
 
+  def test_search_by_iban_lowercase
+    assert_equal [IsoCountryCodes::Code::GBR.instance], IsoCountryCodes.search_by_iban('gb')
+  end
+
+  def test_search_by_iban_uppercase
+    assert_equal [IsoCountryCodes::Code::GBR.instance], IsoCountryCodes.search_by_iban('GB')
+  end
+
+  def test_search_by_iban_invalid_value_and_raise_exception
+    assert_raise IsoCountryCodes::UnknownCodeError do
+        IsoCountryCodes.search_by_iban('xx')
+    end
+  end
+
+  def test_search_by_iban_invalid_value_and_raise_custom_exception
+    assert_raise ArgumentError do
+        IsoCountryCodes.search_by_iban('xx'){ |error| raise ArgumentError }
+    end
+  end
+
+  def test_search_by_iban_invalid_value_and_return_custom_value
+    assert_equal IsoCountryCodes.search_by_iban('xx') {[]}, []
+  end
+
   def test_get_main_currency
     assert_equal 'AUD', IsoCountryCodes.find('AUS').main_currency
   end
