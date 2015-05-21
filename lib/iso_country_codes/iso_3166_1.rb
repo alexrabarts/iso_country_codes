@@ -160,7 +160,7 @@ class IsoCountryCodes
     end
     class BOL < Code #:nodoc:
       self.numeric = %q{068}
-      self.name    = %q{Bolivia, Plurinational State of}
+      self.name    = %q{Bolivia (Plurinational State of)}
       self.alpha2  = %q{BO}
       self.alpha3  = %q{BOL}
     end
@@ -310,7 +310,7 @@ class IsoCountryCodes
     end
     class COD < Code #:nodoc:
       self.numeric = %q{180}
-      self.name    = %q{Congo, the Democratic Republic of the}
+      self.name    = %q{Congo (Democratic Republic of the)}
       self.alpha2  = %q{CD}
       self.alpha3  = %q{COD}
     end
@@ -586,7 +586,7 @@ class IsoCountryCodes
     end
     class VAT < Code #:nodoc:
       self.numeric = %q{336}
-      self.name    = %q{Holy See (Vatican City State)}
+      self.name    = %q{Holy See}
       self.alpha2  = %q{VA}
       self.alpha3  = %q{VAT}
     end
@@ -628,7 +628,7 @@ class IsoCountryCodes
     end
     class IRN < Code #:nodoc:
       self.numeric = %q{364}
-      self.name    = %q{Iran, Islamic Republic of}
+      self.name    = %q{Iran (Islamic Republic of)}
       self.alpha2  = %q{IR}
       self.alpha3  = %q{IRN}
     end
@@ -706,13 +706,13 @@ class IsoCountryCodes
     end
     class PRK < Code #:nodoc:
       self.numeric = %q{408}
-      self.name    = %q{Korea, Democratic People's Republic of}
+      self.name    = %q{Korea (Democratic People's Republic of)}
       self.alpha2  = %q{KP}
       self.alpha3  = %q{PRK}
     end
     class KOR < Code #:nodoc:
       self.numeric = %q{410}
-      self.name    = %q{Korea, Republic of}
+      self.name    = %q{Korea (Republic of)}
       self.alpha2  = %q{KR}
       self.alpha3  = %q{KOR}
     end
@@ -790,7 +790,7 @@ class IsoCountryCodes
     end
     class MKD < Code #:nodoc:
       self.numeric = %q{807}
-      self.name    = %q{Macedonia, the former Yugoslav Republic of}
+      self.name    = %q{Macedonia (the former Yugoslav Republic of)}
       self.alpha2  = %q{MK}
       self.alpha3  = %q{MKD}
     end
@@ -868,13 +868,13 @@ class IsoCountryCodes
     end
     class FSM < Code #:nodoc:
       self.numeric = %q{583}
-      self.name    = %q{Micronesia, Federated States of}
+      self.name    = %q{Micronesia (Federated States of)}
       self.alpha2  = %q{FM}
       self.alpha3  = %q{FSM}
     end
     class MDA < Code #:nodoc:
       self.numeric = %q{498}
-      self.name    = %q{Moldova, Republic of}
+      self.name    = %q{Moldova (Republic of)}
       self.alpha2  = %q{MD}
       self.alpha3  = %q{MDA}
     end
@@ -1408,13 +1408,13 @@ class IsoCountryCodes
     end
     class GBR < Code #:nodoc:
       self.numeric = %q{826}
-      self.name    = %q{United Kingdom}
+      self.name    = %q{United Kingdom of Great Britain and Northern Ireland}
       self.alpha2  = %q{GB}
       self.alpha3  = %q{GBR}
     end
     class USA < Code #:nodoc:
       self.numeric = %q{840}
-      self.name    = %q{United States}
+      self.name    = %q{United States of America}
       self.alpha2  = %q{US}
       self.alpha3  = %q{USA}
     end
@@ -1444,7 +1444,7 @@ class IsoCountryCodes
     end
     class VEN < Code #:nodoc:
       self.numeric = %q{862}
-      self.name    = %q{Venezuela, Bolivarian Republic of}
+      self.name    = %q{Venezuela (Bolivarian Republic of)}
       self.alpha2  = %q{VE}
       self.alpha3  = %q{VEN}
     end
@@ -1456,13 +1456,13 @@ class IsoCountryCodes
     end
     class VGB < Code #:nodoc:
       self.numeric = %q{092}
-      self.name    = %q{Virgin Islands, British}
+      self.name    = %q{Virgin Islands (British)}
       self.alpha2  = %q{VG}
       self.alpha3  = %q{VGB}
     end
     class VIR < Code #:nodoc:
       self.numeric = %q{850}
-      self.name    = %q{Virgin Islands, U.S.}
+      self.name    = %q{Virgin Islands (U.S.)}
       self.alpha2  = %q{VI}
       self.alpha3  = %q{VIR}
     end
