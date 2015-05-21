@@ -1,3 +1,7 @@
+=== 0.7.1 / 2015-05-21
+
+* Adds IsoCountryCodes.search_by_iban method to search by IBAN code
+
 === 0.7.0 / 2015-05-21
 
 * Adds ISO 13616-1 IBAN codes
