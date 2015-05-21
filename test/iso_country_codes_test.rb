@@ -92,6 +92,12 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal IsoCountryCodes.search_by_name('unknown country') {[]}, []
   end
 
+  def test_search_by_name_does_not_raise_regexp_error
+    assert_nothing_raised do
+      IsoCountryCodes.search_by_name('+ab'){[]}
+    end
+  end
+
   def test_search_by_name_exact_match
     assert_equal(
       [IsoCountryCodes::Code::CCK.instance],
