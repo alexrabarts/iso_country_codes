@@ -1,3 +1,8 @@
+=== 0.7.0 / 2015-05-21
+
+* Adds ISO 13616-1 IBAN codes
+* Updated with the latest data from Wikipedia
+
 === 0.6.1 / 2014-11-08
 
 * Allows continents to be accessed in a class instance
@@ -71,4 +76,3 @@
 === 0.1.0 / 2008-11-20
 
 * Initial release
-
