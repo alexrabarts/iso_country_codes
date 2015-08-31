@@ -13,7 +13,7 @@ Provides ISO codes, names and currencies for countries.
 == SYNOPSIS:
 
   # Finding an ISO code returns the country name and other code formats
-  code = IsoCountryCodes.find('usa')
+  code = IsoCountryCodes.find('gb')
   code.name      # => "United Kingdom of Great Britain and Northern Ireland"
   code.numeric   # => "826"
   code.alpha2    # => "GB"
