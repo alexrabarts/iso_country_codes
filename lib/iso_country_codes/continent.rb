@@ -159,7 +159,7 @@ class IsoCountryCodes
       self.continent = 'AS'
     end
     class CYP < Code #:nodoc:
-      self.continent = 'AS'
+      self.continent = 'EU'
     end
     class CZE < Code #:nodoc:
       self.continent = 'EU'
