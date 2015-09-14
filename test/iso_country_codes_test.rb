@@ -171,11 +171,11 @@ class TestIsoCountryCodes < Test::Unit::TestCase
   end
 
   def test_search_by_iban_lowercase
-    assert_equal [IsoCountryCodes::Code::GBR.instance], IsoCountryCodes.search_by_iban('gb')
+    assert_equal [IsoCountryCodes::Code::BIH.instance], IsoCountryCodes.search_by_iban('ba')
   end
 
   def test_search_by_iban_uppercase
-    assert_equal [IsoCountryCodes::Code::GBR.instance], IsoCountryCodes.search_by_iban('GB')
+    assert_equal [IsoCountryCodes::Code::BIH.instance], IsoCountryCodes.search_by_iban('BA')
   end
 
   def test_search_by_iban_invalid_value_and_raise_exception
