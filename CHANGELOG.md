@@ -1,4 +1,4 @@
-## Unreleased
+## 0.7.2 - 2015-09-17
 
 * Fixed RegExp error in `search_by_name` (see #21)
 * Moved Cyprus from Asia to Europe
