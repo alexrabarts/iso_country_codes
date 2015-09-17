@@ -69,6 +69,9 @@ class IsoCountryCodes
     class DEU < Code #:nodoc:
       self.iban = 'DE'
     end
+    class GGC < Code #:nodoc:
+      self.iban = 'GB'
+    end
     class GIB < Code #:nodoc:
       self.iban = 'GI'
     end
@@ -81,6 +84,9 @@ class IsoCountryCodes
     class HUN < Code #:nodoc:
       self.iban = 'HU'
     end
+    class IMN < Code #:nodoc:
+      self.iban = 'GB'
+    end
     class ISL < Code #:nodoc:
       self.iban = 'IS'
     end
@@ -92,6 +98,9 @@ class IsoCountryCodes
     end
     class ITA < Code #:nodoc:
       self.iban = 'IT'
+    end
+    class JEY < Code #:nodoc:
+      self.iban = 'GB'
     end
     class JOR < Code #:nodoc:
       self.iban = 'JO'

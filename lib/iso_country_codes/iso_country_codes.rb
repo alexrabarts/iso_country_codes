@@ -38,9 +38,9 @@ class IsoCountryCodes # :nodoc:
     def search_by_name(str, &fallback)
       fallback ||= DEFAULT_FALLBACK
 
-      instances = all.select { |c| c.name.upcase == str.upcase }
-      instances = all.select { |c| c.name.match(/^#{Regexp.escape(str)}/i) } if instances.empty?
-      instances = all.select { |c| c.name.match(/#{Regexp.escape(str)}/i) } if instances.empty?
+      instances = all.select { |c| c.name.to_s.upcase == str.to_s.upcase }
+      instances = all.select { |c| c.name.to_s.match(/^#{Regexp.escape(str)}/i) } if instances.empty?
+      instances = all.select { |c| c.name.to_s.match(/#{Regexp.escape(str)}/i) } if instances.empty?
 
       return fallback.call "No ISO 3166-1 codes could be found searching with name '#{str}'." if instances.empty?
 
@@ -65,7 +65,7 @@ class IsoCountryCodes # :nodoc:
     def search_by_currency(code, &fallback)
       fallback ||= DEFAULT_FALLBACK
 
-      code = code.to_str.upcase
+      code = code.to_s.upcase
       instances = all.select { |c|
         c.currencies.select { |currency|
           currency != code
@@ -80,7 +80,7 @@ class IsoCountryCodes # :nodoc:
     def search_by_iban(code, &fallback)
       fallback ||= DEFAULT_FALLBACK
 
-      code = code.to_str.upcase
+      code = code.to_s.upcase
       instances = all.select { |c| c.iban == code }
 
       return fallback.call "No ISO 3166-1 codes could be found searching with IBAN '#{code}'." if instances.empty?

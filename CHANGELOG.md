@@ -2,6 +2,7 @@
 
 * Fixed RegExp error in `search_by_name` (see #21)
 * Moved Cyprus from Asia to Europe
+* Added IBAN codes for British Crown Dependencies
 
 ## 0.7.1 - 2015-05-21
 
