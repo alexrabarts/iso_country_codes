@@ -69,7 +69,7 @@ class IsoCountryCodes
     class DEU < Code #:nodoc:
       self.iban = 'DE'
     end
-    class GGC < Code #:nodoc:
+    class GGY < Code #:nodoc:
       self.iban = 'GB'
     end
     class GIB < Code #:nodoc:

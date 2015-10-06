@@ -1,3 +1,8 @@
+## Unreleased
+
+* Fixed country code for Guernsey IBAN entry. Also removes `nil` entry from
+  `IsoCountryCodes::Code.all` and `IsoCountryCodes::Code.for_select` methods.
+
 ## 0.7.2 - 2015-09-17
 
 * Fixed RegExp error in `search_by_name` (see #21)

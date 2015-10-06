@@ -258,6 +258,11 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal IsoCountryCodes::Code.for_select.length, IsoCountryCodes::Code.all.length
   end
 
+  def test_all
+    assert          IsoCountryCodes::Code.all.is_a?(Array)
+    refute_includes IsoCountryCodes::Code.all.map(&:name), nil
+  end
+
   def test_for_select_value_attribute
     assert_equal IsoCountryCodes::Code.for_select(:alpha3)[0][1].length, 3
   end
