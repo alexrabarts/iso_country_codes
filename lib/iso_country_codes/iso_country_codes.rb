@@ -23,11 +23,11 @@ class IsoCountryCodes # :nodoc:
       end
 
       if code.match(/^\d{3}$/)
-        instance = all.select { |c| c.numeric == code }.first
+        instance = all.find { |c| c.numeric == code }
       elsif code.match(/^[A-Z]{2}$/)
-        instance = all.select { |c| c.alpha2 == code }.first
+        instance = all.find { |c| c.alpha2 == code }
       elsif code.match(/^[A-Z]{3}$/)
-        instance = all.select { |c| c.alpha3 == code }.first
+        instance = all.find { |c| c.alpha3 == code }
       end
 
       return fallback.call "No ISO 3166-1 code could be found for '#{code}'." if instance.nil?
