@@ -1,4 +1,8 @@
-## Unreleased
+## 0.7.4
+
+* Fixed calling code for Monaco
+
+## 0.7.3
 
 * Fixed country code for Guernsey IBAN entry. Also removes `nil` entry from
   `IsoCountryCodes::Code.all` and `IsoCountryCodes::Code.for_select` methods.
