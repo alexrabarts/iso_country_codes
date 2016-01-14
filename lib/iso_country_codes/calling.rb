@@ -604,7 +604,7 @@ class IsoCountryCodes
       self.calling = '+231'
     end
     class MCO < Code #:nodoc:
-      self.calling = '+355'
+      self.calling = '+377'
     end
     class ITA < Code #:nodoc:
       self.calling = '+39'
