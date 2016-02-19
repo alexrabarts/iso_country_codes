@@ -9,7 +9,6 @@ class IsoCountryCodes
     'COD' => 'CDR',
     'PSE' => 'PAL',
     'TLS' => 'TMP',
-    'TL'  => 'TP',
     'NLD' => 'ABW',
     'NL'  => 'AW',
     'IT'  => 'IF', # IFAD is a Country for PeopleSoft
