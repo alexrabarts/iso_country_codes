@@ -9,6 +9,9 @@ class IsoCountryCodes
     class AND < Code #:nodoc:
       self.iban = 'AD'
     end
+    class ANT < Code #:nodoc:
+      self.iban = 'AN'
+    end
     class AUT < Code #:nodoc:
       self.iban = 'AT'
     end
