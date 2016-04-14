@@ -6,7 +6,7 @@ class IsoCountryCodes
   module Task
     module UpdateCodes
       def self.get
-        doc    = Nokogiri::HTML.parse(open('http://en.wikipedia.org/wiki/ISO_3166-1'), nil, 'UTF-8')
+        doc    = Nokogiri::HTML.parse(open('https://en.wikipedia.org/wiki/ISO_3166-1'), nil, 'UTF-8')
         codes  = {}
         td_map = {
           :name    => 1,
@@ -24,7 +24,9 @@ class IsoCountryCodes
             selector = "td:nth-of-type(#{td_map[key]})"
             selector << ' a' if key == :name
 
-            value = row.search(selector).text.strip
+            value = row.search(selector).
+                        reject { |el| el.parent.name == 'sup' }.
+                        map(&:text).join.strip
 
             next if value == ''
 

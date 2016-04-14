@@ -224,6 +224,12 @@ class IsoCountryCodes
       self.alpha2  = %q{BI}
       self.alpha3  = %q{BDI}
     end
+    class CPV < Code #:nodoc:
+      self.numeric = %q{132}
+      self.name    = %q{Cabo Verde}
+      self.alpha2  = %q{CV}
+      self.alpha3  = %q{CPV}
+    end
     class KHM < Code #:nodoc:
       self.numeric = %q{116}
       self.name    = %q{Cambodia}
@@ -241,12 +247,6 @@ class IsoCountryCodes
       self.name    = %q{Canada}
       self.alpha2  = %q{CA}
       self.alpha3  = %q{CAN}
-    end
-    class CPV < Code #:nodoc:
-      self.numeric = %q{132}
-      self.name    = %q{Cabo Verde}
-      self.alpha2  = %q{CV}
-      self.alpha3  = %q{CPV}
     end
     class CYM < Code #:nodoc:
       self.numeric = %q{136}
