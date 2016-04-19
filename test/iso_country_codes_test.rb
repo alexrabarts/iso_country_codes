@@ -59,6 +59,14 @@ class TestIsoCountryCodes < Test::Unit::TestCase
     assert_equal [IsoCountryCodes::Code::AUS.instance], IsoCountryCodes.search_by_name('Australia')
   end
 
+  def test_search_comma_separated_name
+    assert_equal [IsoCountryCodes::Code::PSE.instance], IsoCountryCodes.search_by_name('State of Palestine')
+  end
+
+  def test_search_parenthetical_name
+    assert_equal [IsoCountryCodes::Code::KOR.instance], IsoCountryCodes.search_by_name('Republic of Korea')
+  end
+
   def test_search_by_name_returning_many_results_starting_wth_the_search_string
     assert_equal([
       IsoCountryCodes::Code::ARE.instance,

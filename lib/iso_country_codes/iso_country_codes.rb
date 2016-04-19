@@ -41,6 +41,7 @@ class IsoCountryCodes # :nodoc:
       instances = all.select { |c| c.name.to_s.upcase == str.to_s.upcase }
       instances = all.select { |c| c.name.to_s.match(/^#{Regexp.escape(str)}/i) } if instances.empty?
       instances = all.select { |c| c.name.to_s.match(/#{Regexp.escape(str)}/i) } if instances.empty?
+      instances = all.select { |c| word_set(c.name) == word_set(str) } if instances.empty?
 
       return fallback.call "No ISO 3166-1 codes could be found searching with name '#{str}'." if instances.empty?
 
@@ -86,6 +87,11 @@ class IsoCountryCodes # :nodoc:
       return fallback.call "No ISO 3166-1 codes could be found searching with IBAN '#{code}'." if instances.empty?
 
       instances
+    end
+
+    private
+    def word_set(str)
+      str.to_s.upcase.split(/\W/).reject(&:empty?).to_set
     end
   end
 end
