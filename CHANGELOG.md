@@ -1,3 +1,7 @@
+## 0.7.5
+
+* Improved `search_by_name` to handle names with commas and parentheses (see #37)
+
 ## 0.7.4
 
 * Fixed calling code for Monaco
