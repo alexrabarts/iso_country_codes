@@ -49,8 +49,8 @@ class IsoCountryCodes
     end
 
     class << self
-      attr_accessor :name, :numeric, :alpha2, :alpha3, :calling, :continent, :main_currency, :iban
-      attr_writer :currencies
+      attr_accessor :name, :numeric, :alpha2, :alpha3, :calling, :continent, :main_currency
+      attr_writer :currencies, :iban
       alias_method :currency, :main_currency
       alias_method :calling_code, :calling
 
