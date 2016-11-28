@@ -704,7 +704,7 @@ class IsoCountryCodes
       self.main_currency = 'BRL'
     end
     class SVK < Code #:nodoc:
-      self.main_currency = 'SKK'
+      self.main_currency = 'EUR'
     end
     class QAT < Code #:nodoc:
       self.main_currency = 'QAR'
