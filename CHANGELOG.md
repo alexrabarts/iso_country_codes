@@ -1,3 +1,8 @@
+## 0.7.6
+
+* Updated the main currency for Slovakia from `SKK` to `EUR` (see #41)
+* Fixed a warning related to `Code#iban` (see #39)
+
 ## 0.7.5
 
 * Improved `search_by_name` to handle names with commas and parentheses (see #37)
