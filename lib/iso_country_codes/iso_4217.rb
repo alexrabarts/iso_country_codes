@@ -175,7 +175,7 @@ class IsoCountryCodes
       self.main_currency = 'UGX'
     end
     class LTU < Code #:nodoc:
-      self.main_currency = 'LTL'
+      self.main_currency = 'EUR'
     end
     class MNE < Code #:nodoc:
       self.main_currency = 'EUR'
