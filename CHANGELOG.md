@@ -1,3 +1,8 @@
+## 0.7.7
+
+* Updated the main currency for Lithuania from `LTL` to `EUR` (see #43)
+* Updated the short name for Czech Reuplic to `Czechia` (see #42)
+
 ## 0.7.6
 
 * Updated the main currency for Slovakia from `SKK` to `EUR` (see #41)
