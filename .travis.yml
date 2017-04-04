@@ -10,7 +10,7 @@ rvm:
   - ree
   - jruby-19mode
   - jruby-head
-  - rbx
+  - rbx-3
 matrix:
   allow_failures:
     - rvm: ruby-head
