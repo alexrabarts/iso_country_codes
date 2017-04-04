@@ -358,7 +358,7 @@ class IsoCountryCodes
     end
     class CZE < Code #:nodoc:
       self.numeric = %q{203}
-      self.name    = %q{Czech Republic}
+      self.name    = %q{Czechia}
       self.alpha2  = %q{CZ}
       self.alpha3  = %q{CZE}
     end
