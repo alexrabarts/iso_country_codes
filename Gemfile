@@ -6,5 +6,5 @@ gem 'rdoc'
 group :development, :test do
   gem 'nokogiri'
   gem 'erubis'
-  gem "test-unit", "~> 3.0"
+  gem 'test-unit', '~> 3.0'
 end
