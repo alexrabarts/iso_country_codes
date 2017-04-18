@@ -38,6 +38,12 @@ class IsoCountryCodes
       self.alpha2  = %q{AD}
       self.alpha3  = %q{AND}
     end
+    class ANT < Code #:nodoc:
+      # self.numeric = %q{020}
+      self.name    = %q{Netherlands Antilles}
+      self.alpha2  = %q{AN}
+      self.alpha3  = %q{ANT}
+    end
     class AGO < Code #:nodoc:
       self.numeric = %q{024}
       self.name    = %q{Angola}
@@ -1498,4 +1504,3 @@ class IsoCountryCodes
     end
   end # end Code
 end # IsoCountryCodes
-

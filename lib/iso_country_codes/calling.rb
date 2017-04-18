@@ -747,5 +747,8 @@ class IsoCountryCodes
     class GNB < Code #:nodoc:
       self.calling = '+245'
     end
+    class ANT < Code #:nodoc:
+      self.calling = '+599'
+    end
   end # end Code
 end # IsoCountryCodes
