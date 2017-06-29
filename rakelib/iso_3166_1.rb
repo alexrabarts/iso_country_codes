@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 require 'erubis'
+require 'yaml'
 
 class IsoCountryCodes
   module Task
@@ -40,6 +41,8 @@ class IsoCountryCodes
           end
         end
 
+        codes = recurse_merge(codes, self.exceptions)
+
         to_ruby(codes) if codes
       end
 
@@ -47,6 +50,16 @@ class IsoCountryCodes
         tmpl  = File.read(File.join(File.dirname(__FILE__), 'iso_3166_1.rb.erb'))
         eruby = Erubis::Eruby.new(tmpl)
         eruby.result(:codes => codes)
+      end
+
+      def self.exceptions
+        @config ||= YAML.load_file('overrides.yml')
+      end
+
+      def self.recurse_merge(a,b)
+        a.merge(b) do |_,x,y|
+          (x.is_a?(Hash) && y.is_a?(Hash)) ? recurse_merge(x,y) : y
+        end
       end
     end # UpdateCodes
   end # Task
