@@ -30,6 +30,14 @@ class IsoCountryCodes
 
             next if value == ''
 
+            # This is a terrible hack to skip the first table of the
+            # Wikipedia page, under "Naming and disputes".  The
+            # giveaway is that this table doesn't include a "Numeric
+            # code" field.
+            if key == :numeric
+              next unless value.to_i > 0
+            end
+
             value_hash[key] = value
 
             if value_hash.length == code_labels.length - 1
