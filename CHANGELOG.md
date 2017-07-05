@@ -1,3 +1,7 @@
+## 0.7.8
+
+* Add override mechanism, and call TWN "Taiwan". (see #44)
+
 ## 0.7.7
 
 * Updated the main currency for Lithuania from `LTL` to `EUR` (see #43)
