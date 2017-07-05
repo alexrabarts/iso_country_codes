@@ -43,13 +43,12 @@ Provides ISO codes, names and currencies for countries.
 
   gem install iso_country_codes
 
-== OVERRIDES:
+== DATA SOURCE:
 
-For whatever reason, you may want to apply overrides to certain
-fields.  For example, the country name of TWN is simply "Taiwan",
-instead of "Taiwan, Province of China" like in the Wikipedia list used
-as a source, to make it less
-politicised. (https://en.wikipedia.org/wiki/Political_status_of_Taiwan#Controversies)
+IsoCountryCodes pulls its data from the [Wikipedia ISO 3166-1 tables](https://en.wikipedia.org/wiki/ISO_3166-1),
+combined with a small number of overrides contained in the `overrides.yml` file.
+For example, the country name of TWN is overridden to "Taiwan" from
+"Taiwan, Province of China", to make it less politicised.
 
 The format of the `overrides.yml` file is the 3-letter alpha country
 code as the key, and the fields one wants to override as follows:

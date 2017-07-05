@@ -1,6 +1,6 @@
 ## 0.7.8
 
-* Add override mechanism, and call TWN "Taiwan". (see #44)
+* Add (internal) override mechanism, and call TWN "Taiwan". (see #44)
 
 ## 0.7.7
 
