@@ -1306,7 +1306,7 @@ class IsoCountryCodes
     end
     class TWN < Code #:nodoc:
       self.numeric = %q{158}
-      self.name    = %q{Taiwan, Province of China}
+      self.name    = %q{Taiwan}
       self.alpha2  = %q{TW}
       self.alpha3  = %q{TWN}
     end
