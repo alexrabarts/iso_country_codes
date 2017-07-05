@@ -45,10 +45,11 @@ Provides ISO codes, names and currencies for countries.
 
 == DATA SOURCE:
 
-IsoCountryCodes pulls its data from the [Wikipedia ISO 3166-1 tables](https://en.wikipedia.org/wiki/ISO_3166-1),
-combined with a small number of overrides contained in the `overrides.yml` file.
-For example, the country name of TWN is overridden to "Taiwan" from
-"Taiwan, Province of China", to make it less politicised.
+IsoCountryCodes pulls its data from the Wikipedia ISO 3166-1 tables
+(https://en.wikipedia.org/wiki/ISO_3166-1), combined with a small number of
+overrides contained in the `overrides.yml` file. For example, the country name
+of TWN is overridden to "Taiwan" from "Taiwan, Province of China", to make it
+less politicised.
 
 The format of the `overrides.yml` file is the 3-letter alpha country
 code as the key, and the fields one wants to override as follows:
