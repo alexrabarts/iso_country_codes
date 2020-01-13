@@ -571,7 +571,7 @@ class IsoCountryCodes
       self.calling = '+690'
     end
     class GIN < Code #:nodoc:
-      self.calling = '+225'
+      self.calling = '+224'
     end
     class NAM < Code #:nodoc:
       self.calling = '+264'
