@@ -310,7 +310,7 @@ class IsoCountryCodes
     end
     class COD < Code #:nodoc:
       self.numeric = %q{180}
-      self.name    = %q{Congo, the Democratic Republic of the}
+      self.name    = %q{Congo, Democratic Republic of the}
       self.alpha2  = %q{CD}
       self.alpha3  = %q{COD}
     end
@@ -421,6 +421,12 @@ class IsoCountryCodes
       self.name    = %q{Estonia}
       self.alpha2  = %q{EE}
       self.alpha3  = %q{EST}
+    end
+    class SWZ < Code #:nodoc:
+      self.numeric = %q{748}
+      self.name    = %q{Eswatini}
+      self.alpha2  = %q{SZ}
+      self.alpha3  = %q{SWZ}
     end
     class ETH < Code #:nodoc:
       self.numeric = %q{231}
@@ -712,7 +718,7 @@ class IsoCountryCodes
     end
     class KOR < Code #:nodoc:
       self.numeric = %q{410}
-      self.name    = %q{Korea (Republic of)}
+      self.name    = %q{Korea, Republic of}
       self.alpha2  = %q{KR}
       self.alpha3  = %q{KOR}
     end
@@ -787,12 +793,6 @@ class IsoCountryCodes
       self.name    = %q{Macao}
       self.alpha2  = %q{MO}
       self.alpha3  = %q{MAC}
-    end
-    class MKD < Code #:nodoc:
-      self.numeric = %q{807}
-      self.name    = %q{Macedonia (the former Yugoslav Republic of)}
-      self.alpha2  = %q{MK}
-      self.alpha3  = %q{MKD}
     end
     class MDG < Code #:nodoc:
       self.numeric = %q{450}
@@ -874,7 +874,7 @@ class IsoCountryCodes
     end
     class MDA < Code #:nodoc:
       self.numeric = %q{498}
-      self.name    = %q{Moldova (Republic of)}
+      self.name    = %q{Moldova, Republic of}
       self.alpha2  = %q{MD}
       self.alpha3  = %q{MDA}
     end
@@ -985,6 +985,12 @@ class IsoCountryCodes
       self.name    = %q{Norfolk Island}
       self.alpha2  = %q{NF}
       self.alpha3  = %q{NFK}
+    end
+    class MKD < Code #:nodoc:
+      self.numeric = %q{807}
+      self.name    = %q{North Macedonia}
+      self.alpha2  = %q{MK}
+      self.alpha3  = %q{MKD}
     end
     class MNP < Code #:nodoc:
       self.numeric = %q{580}
@@ -1279,12 +1285,6 @@ class IsoCountryCodes
       self.name    = %q{Svalbard and Jan Mayen}
       self.alpha2  = %q{SJ}
       self.alpha3  = %q{SJM}
-    end
-    class SWZ < Code #:nodoc:
-      self.numeric = %q{748}
-      self.name    = %q{Swaziland}
-      self.alpha2  = %q{SZ}
-      self.alpha3  = %q{SWZ}
     end
     class SWE < Code #:nodoc:
       self.numeric = %q{752}
