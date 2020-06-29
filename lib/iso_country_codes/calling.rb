@@ -73,7 +73,7 @@ class IsoCountryCodes
       self.calling = '+375'
     end
     class PRI < Code #:nodoc:
-      self.calling = '+787'
+      self.calling = '+1'
     end
     class GAB < Code #:nodoc:
       self.calling = '+241'
