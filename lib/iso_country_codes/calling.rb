@@ -472,7 +472,7 @@ class IsoCountryCodes
       self.calling = '+350'
     end
     class NER < Code #:nodoc:
-      self.calling = '+277'
+      self.calling = '+227'
     end
     class HTI < Code #:nodoc:
       self.calling = '+509'
