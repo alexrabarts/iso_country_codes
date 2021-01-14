@@ -747,5 +747,8 @@ class IsoCountryCodes
     class GNB < Code #:nodoc:
       self.calling = '+245'
     end
+    class YUG < Code #:nodoc:
+      self.calling = '+38'
+    end
   end # end Code
 end # IsoCountryCodes

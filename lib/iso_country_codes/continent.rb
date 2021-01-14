@@ -737,5 +737,8 @@ class IsoCountryCodes
     class ZWE < Code #:nodoc:
       self.continent = 'AF'
     end
+    class YUG < Code #:nodoc:
+      self.continent = 'EU'
+    end
   end
 end
