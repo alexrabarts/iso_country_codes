@@ -584,6 +584,9 @@ class IsoCountryCodes
     class SDN < Code #:nodoc:
       self.continent = 'AF'
     end
+    class SSD < Code #:nodoc:
+      self.continent = 'AF'
+    end
     class SWE < Code #:nodoc:
       self.continent = 'EU'
     end
