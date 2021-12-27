@@ -362,6 +362,9 @@ class IsoCountryCodes
     class KOR < Code #:nodoc:
       self.continent = 'AS'
     end
+    class XXK < Code #:nodoc:
+      self.continent = "EU"
+    end
     class KWT < Code #:nodoc:
       self.continent = 'AS'
     end
