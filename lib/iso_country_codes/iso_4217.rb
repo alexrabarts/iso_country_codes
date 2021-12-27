@@ -312,6 +312,9 @@ class IsoCountryCodes
     class KOR < Code #:nodoc:
       self.main_currency = 'KRW'
     end
+    class XXK < Code #:nodoc:
+      self.main_currency = "EUR"
+    end
     class MDG < Code #:nodoc:
       self.main_currency = 'MGA'
     end

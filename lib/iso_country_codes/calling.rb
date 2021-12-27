@@ -312,6 +312,9 @@ class IsoCountryCodes
     class KOR < Code #:nodoc:
       self.calling = '+82'
     end
+    class XXK < Code #:nodoc:
+      self.calling = "+383"
+    end
     class MDG < Code #:nodoc:
       self.calling = '+261'
     end

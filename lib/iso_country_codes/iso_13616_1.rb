@@ -108,6 +108,9 @@ class IsoCountryCodes
     class KAZ < Code #:nodoc:
       self.iban = 'KZ'
     end
+    class XXK < Code #:nodoc:
+      self.iban = "XK"
+    end
     class KWT < Code #:nodoc:
       self.iban = 'KW'
     end

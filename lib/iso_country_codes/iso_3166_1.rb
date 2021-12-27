@@ -796,7 +796,7 @@ class IsoCountryCodes
     end
     class MKD < Code #:nodoc:
       self.numeric = %q{807}
-      self.name    = %q{Macedonia (the former Yugoslav Republic of)}
+      self.name    = %q{North Macedonia}
       self.alpha2  = %q{MK}
       self.alpha3  = %q{MKD}
     end
