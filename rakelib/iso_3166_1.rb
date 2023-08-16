@@ -7,7 +7,7 @@ class IsoCountryCodes
   module Task
     module UpdateCodes
       def self.get
-        doc    = Nokogiri::HTML.parse(open('https://en.wikipedia.org/wiki/ISO_3166-1'), nil, 'UTF-8')
+        doc    = Nokogiri::HTML.parse(URI.open('https://en.wikipedia.org/wiki/ISO_3166-1'), nil, 'UTF-8')
         codes  = {}
         td_map = {
           :name    => 1,
