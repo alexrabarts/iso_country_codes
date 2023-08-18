@@ -1,6 +1,11 @@
 ---
 "ALA":
   :name: "Aland Islands"
+"ANT":
+  :name: "Netherlands Antilles"
+  :alpha2: "AN"
+  :alpha3: "ANT"
+  :numeric: 530
 "BES":
   :name: "Bonaire, Saint Eustatius, and Saba"
 "IC":
