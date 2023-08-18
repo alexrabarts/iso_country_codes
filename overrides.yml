@@ -1,3 +1,39 @@
 ---
-"TWN":
-  :name: "Taiwan"
+"ALA":
+  :name: "Aland Islands"
+"ANT":
+  :name: "Netherlands Antilles"
+  :alpha2: "AN"
+  :alpha3: "ANT"
+  :numeric: 530
+"BES":
+  :name: "Bonaire, Saint Eustatius, and Saba"
+"IC":
+  :name: "Canary Islands"
+  :alpha2: "IC"
+"COG":
+  :name: "Congo, Democratic People's Republic"
+"COD":
+  :name: "Congo, Republic of"
+"HRV":
+  :name: "Croatia/Hrvatska"
+"VAT":
+  :name: "Holy See (City Vatican State)"
+"PRK":
+  :name: "Korea, Democratic People's Republic"
+"KOR":
+  :name: "Korea, Republic of"
+"FSM":
+  :name: "Micronesia, Federal State of"
+"MDA":
+  :name: "Moldova, Republic of"
+"MAF":
+  :name: "Saint Martin"
+"SPM":
+  :name: "St. Pierre and Miquelon"
+"SGS":
+  :name: "South Georgia"
+"PSE":
+  :name: "State of Palestine"
+"TUR":
+  :name: "Türkiye"

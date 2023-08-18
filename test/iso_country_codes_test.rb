@@ -78,7 +78,7 @@ class TestIsoCountryCodes < Test::Unit::TestCase
 
   def test_search_by_name_returning_many_results_not_starting_with_the_search_string
     assert_equal([
-      IsoCountryCodes::Code::COD.instance,
+      IsoCountryCodes::Code::COG.instance,
       IsoCountryCodes::Code::PRK.instance,
       IsoCountryCodes::Code::LAO.instance
     ], IsoCountryCodes.search_by_name('democratic'))
