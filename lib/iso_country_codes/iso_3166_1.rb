@@ -940,7 +940,7 @@ class IsoCountryCodes
     end
     class NLD < Code #:nodoc:
       self.numeric = %q{528}
-      self.name    = %q{Netherlands, Kingdom of the}
+      self.name    = %q{Netherlands}
       self.alpha2  = %q{NL}
       self.alpha3  = %q{NLD}
     end
