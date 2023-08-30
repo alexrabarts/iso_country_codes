@@ -1,11 +1,6 @@
 ---
 "ALA":
   :name: "Aland Islands"
-"ANT":
-  :name: "Netherlands Antilles"
-  :alpha2: "AN"
-  :alpha3: "ANT"
-  :numeric: 530
 "BES":
   :name: "Bonaire, Saint Eustatius, and Saba"
 "IC":
@@ -37,3 +32,61 @@
   :name: "State of Palestine"
 "TUR":
   :name: "Türkiye"
+"BOL":  
+  :name: "Bolivia"
+"BRN":
+  :name: "Brunei Darrussalam"
+"CPV":
+  :name: "Cape Verde"
+"CIV":
+  :name: "Cote d'Ivoire"
+"CUW":  
+  :name: "Curacao"
+"CZE":
+  :name: "Czech Republic"
+"TLS":
+  :name: "East Timor"
+"SWZ":
+  :name: "Swaziland"
+"FLK":
+  :name: "Falkland Islands"
+"HMD":
+  :name: "Heard and McDonald Islands"
+"MAC":
+  :name: "Macau"
+"MKD":  
+  :name: "Macedonia"
+"PCN":
+  :name: "Pitcairn Island"
+"REU":  
+  :name: "Reunion Island"
+"SHN":
+  :name: "Saint Helena"
+"SXM":
+  :name: "Sint Maarten"
+"SVK":
+  :name: "Slovak Republic"
+"SJM":
+  :name: "Svalbard and Jan Mayen Islands"
+"TWN": 
+  :name: "Taiwan"
+"TZA":  
+  :name: "Tanzania"
+"GBR":  
+  :name: "United Kingdom"
+"USA":
+  :name: "United States"
+"UMI":
+  :name: "US Minor Outlying Islands"
+"VEN":
+  :name: "Venezuela"
+"VNM":
+  :name: "Vietnam"
+"VIR":  
+  :name: "Virgin Islands (USA)"
+"WLF":  
+  :name: "Wallis and Futuna Islands"
+"XK":
+  :name: "Kosovo"
+"EA":
+  :name: "Ceuta and Melilla"
