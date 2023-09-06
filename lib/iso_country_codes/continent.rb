@@ -620,6 +620,9 @@ class IsoCountryCodes
     class SOM < Code #:nodoc:
       self.continent = 'AF'
     end
+    class XSO < Code #:nodoc:
+      self.continent = 'AF'
+    end
     class SUR < Code #:nodoc:
       self.continent = 'SA'
     end

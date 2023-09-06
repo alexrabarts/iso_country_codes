@@ -147,6 +147,9 @@ class IsoCountryCodes
     class SOM < Code #:nodoc:
       self.calling = '+252'
     end
+    class XSO < Code #:nodoc:
+      self.calling = '+252'
+    end
     class GUY < Code #:nodoc:
       self.calling = '+592'
     end

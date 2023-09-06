@@ -1238,6 +1238,12 @@ class IsoCountryCodes
       self.alpha2  = %q{SO}
       self.alpha3  = %q{SOM}
     end
+    class XSO < Code #:nodoc:
+      self.numeric = %q{706}
+      self.name    = %q{Somaliland}
+      self.alpha2  = %q{XS}
+      self.alpha3  = %q{XSO}
+    end
     class ZAF < Code #:nodoc:
       self.numeric = %q{710}
       self.name    = %q{South Africa}
