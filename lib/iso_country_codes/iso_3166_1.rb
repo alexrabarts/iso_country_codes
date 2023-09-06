@@ -1239,7 +1239,7 @@ class IsoCountryCodes
       self.alpha3  = %q{SOM}
     end
     class XSO < Code #:nodoc:
-      self.numeric = %q{706}
+      self.numeric = nil
       self.name    = %q{Somaliland}
       self.alpha2  = %q{XS}
       self.alpha3  = %q{XSO}
