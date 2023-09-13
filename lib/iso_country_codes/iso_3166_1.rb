@@ -716,6 +716,12 @@ class IsoCountryCodes
       self.alpha2  = %q{KR}
       self.alpha3  = %q{KOR}
     end
+    class XXK < Code #:nodoc:
+      self.numeric = %q{383}
+      self.name = %q{Kosovo}
+      self.alpha2 = %q{XK}
+      self.alpha3 = %q{XXK}
+    end
     class KWT < Code #:nodoc:
       self.numeric = %q{414}
       self.name    = %q{Kuwait}
@@ -790,7 +796,7 @@ class IsoCountryCodes
     end
     class MKD < Code #:nodoc:
       self.numeric = %q{807}
-      self.name    = %q{Macedonia (the former Yugoslav Republic of)}
+      self.name    = %q{North Macedonia}
       self.alpha2  = %q{MK}
       self.alpha3  = %q{MKD}
     end
@@ -1231,6 +1237,12 @@ class IsoCountryCodes
       self.name    = %q{Somalia}
       self.alpha2  = %q{SO}
       self.alpha3  = %q{SOM}
+    end
+    class XSO < Code #:nodoc:
+      self.numeric = nil
+      self.name    = %q{Somaliland}
+      self.alpha2  = %q{XS}
+      self.alpha3  = %q{XSO}
     end
     class ZAF < Code #:nodoc:
       self.numeric = %q{710}

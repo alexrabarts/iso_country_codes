@@ -362,6 +362,9 @@ class IsoCountryCodes
     class KOR < Code #:nodoc:
       self.continent = 'AS'
     end
+    class XXK < Code #:nodoc:
+      self.continent = "EU"
+    end
     class KWT < Code #:nodoc:
       self.continent = 'AS'
     end
@@ -584,6 +587,9 @@ class IsoCountryCodes
     class SDN < Code #:nodoc:
       self.continent = 'AF'
     end
+    class SSD < Code #:nodoc:
+      self.continent = 'AF'
+    end
     class SWE < Code #:nodoc:
       self.continent = 'EU'
     end
@@ -612,6 +618,9 @@ class IsoCountryCodes
       self.continent = 'AF'
     end
     class SOM < Code #:nodoc:
+      self.continent = 'AF'
+    end
+    class XSO < Code #:nodoc:
       self.continent = 'AF'
     end
     class SUR < Code #:nodoc:

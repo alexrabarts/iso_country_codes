@@ -147,6 +147,9 @@ class IsoCountryCodes
     class SOM < Code #:nodoc:
       self.main_currency = 'SOS'
     end
+    class XSO < Code #:nodoc:
+      self.main_currency = 'SOS'
+    end
     class GUY < Code #:nodoc:
       self.main_currency = 'GYD'
     end
@@ -311,6 +314,9 @@ class IsoCountryCodes
     end
     class KOR < Code #:nodoc:
       self.main_currency = 'KRW'
+    end
+    class XXK < Code #:nodoc:
+      self.main_currency = "EUR"
     end
     class MDG < Code #:nodoc:
       self.main_currency = 'MGA'
