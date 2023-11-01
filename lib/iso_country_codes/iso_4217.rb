@@ -199,7 +199,7 @@ class IsoCountryCodes
       self.main_currency = 'XOF'
     end
     class SLV < Code #:nodoc:
-      self.main_currency = 'SVC'
+      self.main_currency = 'USD'
     end
     class LCA < Code #:nodoc:
       self.main_currency = 'XCD'
